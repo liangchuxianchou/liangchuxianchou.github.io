@@ -1,27 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>My blog</title>
   
   
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-17T08:01:53.726Z</updated>
+  <updated>2020-08-17T11:26:22.468Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>liangchuxianchou</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>3. 查看数据类型</title>
+    <link href="http://yoursite.com/2020/08/17/3.%20%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://yoursite.com/2020/08/17/3.%20%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
+    <published>2020-08-17T10:27:31.033Z</published>
+    <updated>2020-08-17T11:26:22.468Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="查看数据类型"><a href="#查看数据类型" class="headerlink" title="查看数据类型"></a>查看数据类型</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">使用type内置库可以查看一个常量/变量所对应的数据类型</span><br><span class="line">    e.g. : </span><br><span class="line">            查看一个常量所对应的数据类型：</span><br><span class="line">                print(type(<span class="number">1</span>)) <span class="comment"># &lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">                print(type(<span class="number">3.14</span>)) <span class="comment"># &lt;class &#x27;float&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">                print(type((<span class="number">-1</span>) ** <span class="number">0.5</span>)) <span class="comment"># &lt;class &#x27;complex&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">                print(type(<span class="string">&#x27;你好！&#x27;</span>)) <span class="comment"># &lt;class &#x27;str&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">                print(type(Ture)) <span class="comment"># &lt;class &#x27;bool&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">            查看一个变量所对应的数据类型：</span><br><span class="line">                (<span class="number">1</span>) 定义变量：</span><br><span class="line">                     </span><br><span class="line">                    数字类型：</span><br><span class="line">                         整数型：</span><br><span class="line">                    a = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">                    浮点型：</span><br><span class="line">                    b = <span class="number">3.14</span></span><br><span class="line"></span><br><span class="line">                    复数：</span><br><span class="line">                    c = (<span class="number">-1</span>) ** <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">                    字符串类型：</span><br><span class="line">                    d = <span class="string">&#x27;你好！&#x27;</span></span><br><span class="line"></span><br><span class="line">                    布尔类型：</span><br><span class="line">                    e = <span class="literal">True</span></span><br><span class="line">                    f = <span class="literal">False</span></span><br><span class="line">                    g = <span class="number">1</span> &gt; <span class="number">0</span></span><br><span class="line"></span><br><span class="line">                    列表类型：</span><br><span class="line">                    names = [<span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;李四&#x27;</span>, <span class="string">&#x27;王五&#x27;</span>, <span class="string">&#x27;赵六&#x27;</span>]</span><br><span class="line"></span><br><span class="line">                    元组类型：</span><br><span class="line">                    nums = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">                    集合类型:</span><br><span class="line">                    x = &#123;<span class="number">9</span>, <span class="string">&#x27;Hello&#x27;</span>, <span class="number">10</span>, <span class="string">&#x27;你好！&#x27;</span>&#125;</span><br><span class="line"></span><br><span class="line">                    字典类型：</span><br><span class="line">                    person = &#123;<span class="string">&#x27;name&#x27;</span>: <span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;age&#x27;</span>: <span class="number">18</span>, <span class="string">&#x27;height&#x27;</span>: <span class="string">&#x27;18湖北0cm&#x27;</span>, <span class="string">&#x27;addr&#x27;</span>: <span class="string">&#x27;湖北&#x27;</span>&#125;</span><br><span class="line">            </span><br><span class="line">                (<span class="number">2</span>) 查看数据类型：</span><br><span class="line">                    </span><br><span class="line">                        print(type(a)) <span class="comment">#&lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line">                        print(type(b)) <span class="comment"># &lt;class &#x27;float&#x27;&gt;</span></span><br><span class="line">                        print(type(c)) <span class="comment"># &lt;class &#x27;complex&#x27;&gt;</span></span><br><span class="line">                        print(type(d)) <span class="comment"># &lt;class &#x27;str&#x27;&gt;</span></span><br><span class="line">                        print(type(e)) <span class="comment"># &lt;class &#x27;bool&#x27;&gt;</span></span><br><span class="line">                        print(type(f)) <span class="comment"># &lt;class &#x27;bool&#x27;&gt;</span></span><br><span class="line">                        print(type(names)) <span class="comment"># &lt;class &#x27;list&#x27;&gt;</span></span><br><span class="line">                        print(type(nums)) <span class="comment"># &lt;class &#x27;tuple&#x27;&gt;</span></span><br><span class="line">                        print(type(x)) <span class="comment"># &lt;class &#x27;set&#x27;&gt;</span></span><br><span class="line">                        print(type(person)) <span class="comment"># &lt;class &#x27;dict&#x27;&gt;</span></span><br><span class="line">                </span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;查看数据类型&quot;&gt;&lt;a href=&quot;#查看数据类型&quot; class=&quot;headerlink&quot; title=&quot;查看数据类型&quot;&gt;&lt;/a&gt;查看数据类型&lt;/h1&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gu</summary>
+      
+    
+    
+    
+    <category term="Python基础知识" scheme="http://yoursite.com/categories/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Python基础语法" scheme="http://yoursite.com/tags/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2. 常见的数据类型</title>
+    <link href="http://yoursite.com/2020/08/17/2.%20%E5%B8%B8%E8%A7%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://yoursite.com/2020/08/17/2.%20%E5%B8%B8%E8%A7%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
+    <published>2020-08-17T10:27:29.412Z</published>
+    <updated>2020-08-17T11:26:16.092Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="常见的数据类型"><a href="#常见的数据类型" class="headerlink" title="常见的数据类型"></a>常见的数据类型</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 数字类型：</span><br><span class="line">    (<span class="number">1</span>) 整数型int：</span><br><span class="line">        e.g. : <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">0</span> <span class="number">-1</span></span><br><span class="line">            </span><br><span class="line">    (<span class="number">2</span>) 浮点型float：</span><br><span class="line">        e.g. : <span class="number">1.5</span> <span class="number">2.0</span> <span class="number">3.5</span> <span class="number">-1.5</span></span><br><span class="line">            </span><br><span class="line">    (<span class="number">3</span>) 复数complex：</span><br><span class="line">        e.g. : (<span class="number">-1</span>) ** <span class="number">0.5</span></span><br><span class="line">            </span><br><span class="line"><span class="number">2.</span> 字符串类型：（Python里的字符串要求使用一对单引号/双引号包裹）</span><br><span class="line">    e.g. : <span class="string">&#x27;abc&#x27;</span> <span class="string">&#x27;123&#x27;</span> <span class="string">&#x27;你好！&#x27;</span> </span><br><span class="line">    </span><br><span class="line"><span class="number">3.</span> 布尔类型：（用来表示 真假/对错）</span><br><span class="line">    布尔类型中一共只有两个值:</span><br><span class="line">    一个是<span class="literal">True</span>,另一个是<span class="literal">False</span></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="number">4.</span> 现阶段了解：</span><br><span class="line">    (<span class="number">1</span>) 列表类型：</span><br><span class="line">        e.g. : names = [<span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;李四&#x27;</span>, <span class="string">&#x27;王五&#x27;</span>, <span class="string">&#x27;赵六&#x27;</span>]</span><br><span class="line">        </span><br><span class="line">    (<span class="number">2</span>) 元组类型：</span><br><span class="line">        e.g. : nums = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">            </span><br><span class="line">    (<span class="number">3</span>) 集合类型：</span><br><span class="line">        e.g. : x = &#123;<span class="number">9</span>, <span class="string">&#x27;Hello&#x27;</span>, <span class="number">10</span> <span class="string">&#x27;你好！&#x27;</span>&#125;</span><br><span class="line">            </span><br><span class="line">    (<span class="number">4</span>) 字典类型：</span><br><span class="line">        e.g. : person = &#123;<span class="string">&#x27;name&#x27;</span>: <span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;age&#x27;</span>: <span class="number">18</span>, <span class="string">&#x27;height&#x27;</span>: <span class="string">&#x27;18湖北0cm&#x27;</span>, <span class="string">&#x27;addr&#x27;</span>: <span class="string">&#x27;湖北&#x27;</span>&#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;常见的数据类型&quot;&gt;&lt;a href=&quot;#常见的数据类型&quot; class=&quot;headerlink&quot; title=&quot;常见的数据类型&quot;&gt;&lt;/a&gt;常见的数据类型&lt;/h1&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class</summary>
+      
+    
+    
+    
+    <category term="Python基础知识" scheme="http://yoursite.com/categories/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Python基础语法" scheme="http://yoursite.com/tags/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>1. 注释的使用</title>
     <link href="http://yoursite.com/2020/08/16/1.%20%E6%B3%A8%E9%87%8A%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://yoursite.com/2020/08/16/1.%20%E6%B3%A8%E9%87%8A%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
     <published>2020-08-16T12:47:21.065Z</published>
-    <updated>2020-08-17T08:01:53.726Z</updated>
+    <updated>2020-08-17T11:26:04.770Z</updated>
     
     <content type="html"><![CDATA[<h1 id="注释的使用"><a href="#注释的使用" class="headerlink" title="注释的使用"></a>注释的使用</h1><h2 id="格式："><a href="#格式：" class="headerlink" title="格式："></a>格式：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 单行注释：</span><br><span class="line">    <span class="comment"># 注释内容</span></span><br><span class="line">    </span><br><span class="line"><span class="number">2.</span> 多行注释：</span><br><span class="line">    （<span class="number">1</span>）</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        注释内容</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">    （<span class="number">2</span>）</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        注释内容</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure><h3 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h3><ol><li><p>是为了对程序进行说明</p></li><li><p>注释是给人看的，程序不会执行</p></li></ol><blockquote><p>在PyCharm中，</p><p>​                ctrl    +    /    可以实现快速给代码添加或删除注释</p></blockquote>]]></content>
     
@@ -33,30 +81,10 @@
     
     
     
-    <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    <category term="Python基础知识" scheme="http://yoursite.com/categories/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/08/14/hello-world/"/>
-    <id>http://yoursite.com/2020/08/14/hello-world/</id>
-    <published>2020-08-14T08:20:34.398Z</published>
-    <updated>2020-08-16T13:09:44.526Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
+    <category term="Python基础语法" scheme="http://yoursite.com/tags/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
