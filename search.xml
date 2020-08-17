@@ -1,54 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>1. 注释的使用</title>
-    <url>/2020/08/16/1.%20%E6%B3%A8%E9%87%8A%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="注释的使用"><a href="#注释的使用" class="headerlink" title="注释的使用"></a>注释的使用</h1><h2 id="格式："><a href="#格式：" class="headerlink" title="格式："></a>格式：</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 单行注释：</span><br><span class="line">    <span class="comment"># 注释内容</span></span><br><span class="line">    </span><br><span class="line"><span class="number">2.</span> 多行注释：</span><br><span class="line">    （<span class="number">1</span>）</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        注释内容</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">    （<span class="number">2</span>）</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        注释内容</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h3><ol>
-<li><p>是为了对程序进行说明</p>
-</li>
-<li><p>注释是给人看的，程序不会执行</p>
-</li>
+    <title>1. 程序注释与HelloWorld</title>
+    <url>/2020/08/17/1.%20%E7%A8%8B%E5%BA%8F%E6%B3%A8%E9%87%8A%E4%B8%8EHelloWorld/</url>
+    <content><![CDATA[<h1 id="程序注释与HelloWorld"><a href="#程序注释与HelloWorld" class="headerlink" title="程序注释与HelloWorld"></a>程序注释与HelloWorld</h1><h2 id="一-程序注释"><a href="#一-程序注释" class="headerlink" title="一. 程序注释"></a>一. 程序注释</h2><ol>
+<li>单行注释</li>
 </ol>
-<blockquote>
-<p>在PyCharm中，</p>
-<p>​                ctrl    +    /    可以实现快速给代码添加或删除注释</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Python基础知识</category>
-      </categories>
-      <tags>
-        <tag>Python基础语法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2. 常见的数据类型</title>
-    <url>/2020/08/17/2.%20%E5%B8%B8%E8%A7%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<h1 id="常见的数据类型"><a href="#常见的数据类型" class="headerlink" title="常见的数据类型"></a>常见的数据类型</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 数字类型：</span><br><span class="line">    (<span class="number">1</span>) 整数型int：</span><br><span class="line">        e.g. : <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">0</span> <span class="number">-1</span></span><br><span class="line">            </span><br><span class="line">    (<span class="number">2</span>) 浮点型float：</span><br><span class="line">        e.g. : <span class="number">1.5</span> <span class="number">2.0</span> <span class="number">3.5</span> <span class="number">-1.5</span></span><br><span class="line">            </span><br><span class="line">    (<span class="number">3</span>) 复数complex：</span><br><span class="line">        e.g. : (<span class="number">-1</span>) ** <span class="number">0.5</span></span><br><span class="line">            </span><br><span class="line"><span class="number">2.</span> 字符串类型：（Python里的字符串要求使用一对单引号/双引号包裹）</span><br><span class="line">    e.g. : <span class="string">&#x27;abc&#x27;</span> <span class="string">&#x27;123&#x27;</span> <span class="string">&#x27;你好！&#x27;</span> </span><br><span class="line">    </span><br><span class="line"><span class="number">3.</span> 布尔类型：（用来表示 真假/对错）</span><br><span class="line">    布尔类型中一共只有两个值:</span><br><span class="line">    一个是<span class="literal">True</span>,另一个是<span class="literal">False</span></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="number">4.</span> 现阶段了解：</span><br><span class="line">    (<span class="number">1</span>) 列表类型：</span><br><span class="line">        e.g. : names = [<span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;李四&#x27;</span>, <span class="string">&#x27;王五&#x27;</span>, <span class="string">&#x27;赵六&#x27;</span>]</span><br><span class="line">        </span><br><span class="line">    (<span class="number">2</span>) 元组类型：</span><br><span class="line">        e.g. : nums = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">            </span><br><span class="line">    (<span class="number">3</span>) 集合类型：</span><br><span class="line">        e.g. : x = &#123;<span class="number">9</span>, <span class="string">&#x27;Hello&#x27;</span>, <span class="number">10</span> <span class="string">&#x27;你好！&#x27;</span>&#125;</span><br><span class="line">            </span><br><span class="line">    (<span class="number">4</span>) 字典类型：</span><br><span class="line">        e.g. : person = &#123;<span class="string">&#x27;name&#x27;</span>: <span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;age&#x27;</span>: <span class="number">18</span>, <span class="string">&#x27;height&#x27;</span>: <span class="string">&#x27;18湖北0cm&#x27;</span>, <span class="string">&#x27;addr&#x27;</span>: <span class="string">&#x27;湖北&#x27;</span>&#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 注释内容</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>多行注释</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">注</span></span><br><span class="line"><span class="comment">释</span></span><br><span class="line"><span class="comment">内</span></span><br><span class="line"><span class="comment">容</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="二-HelloWorld各行代码含义"><a href="#二-HelloWorld各行代码含义" class="headerlink" title="二. HelloWorld各行代码含义"></a>二. HelloWorld各行代码含义</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 第一行的第三个单词（类名称）必须和所在的文件名称完全一样，大小写也要一样</span></span><br><span class="line"><span class="comment">// public class后面代表定义一个类的名称，类是java当中所有源代码的基本组织单位</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 第二行的内容是万年不变的固定写法，代码mian方法</span></span><br><span class="line">    <span class="comment">// 这一行代码代表程序执行的起点</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 第三行代表打印输出语句（其实就是在屏幕上显示所要打印输出的内容），是固定写法</span></span><br><span class="line">        <span class="comment">// 希望显示什么东西，就在小括号当中填写什么内容</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Hello,world!&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
-        <category>Python基础知识</category>
+        <category>Java基础知识</category>
       </categories>
       <tags>
-        <tag>Python基础语法</tag>
+        <tag>Java基础语法</tag>
       </tags>
   </entry>
   <entry>
-    <title>3. 查看数据类型</title>
-    <url>/2020/08/17/3.%20%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<h1 id="查看数据类型"><a href="#查看数据类型" class="headerlink" title="查看数据类型"></a>查看数据类型</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">使用type内置库可以查看一个常量/变量所对应的数据类型</span><br><span class="line">    e.g. : </span><br><span class="line">            查看一个常量所对应的数据类型：</span><br><span class="line">                print(type(<span class="number">1</span>)) <span class="comment"># &lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">                print(type(<span class="number">3.14</span>)) <span class="comment"># &lt;class &#x27;float&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">                print(type((<span class="number">-1</span>) ** <span class="number">0.5</span>)) <span class="comment"># &lt;class &#x27;complex&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">                print(type(<span class="string">&#x27;你好！&#x27;</span>)) <span class="comment"># &lt;class &#x27;str&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">                print(type(Ture)) <span class="comment"># &lt;class &#x27;bool&#x27;&gt;</span></span><br><span class="line">            </span><br><span class="line">            查看一个变量所对应的数据类型：</span><br><span class="line">                (<span class="number">1</span>) 定义变量：</span><br><span class="line">                     </span><br><span class="line">                    数字类型：</span><br><span class="line">                         整数型：</span><br><span class="line">                    a = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">                    浮点型：</span><br><span class="line">                    b = <span class="number">3.14</span></span><br><span class="line"></span><br><span class="line">                    复数：</span><br><span class="line">                    c = (<span class="number">-1</span>) ** <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">                    字符串类型：</span><br><span class="line">                    d = <span class="string">&#x27;你好！&#x27;</span></span><br><span class="line"></span><br><span class="line">                    布尔类型：</span><br><span class="line">                    e = <span class="literal">True</span></span><br><span class="line">                    f = <span class="literal">False</span></span><br><span class="line">                    g = <span class="number">1</span> &gt; <span class="number">0</span></span><br><span class="line"></span><br><span class="line">                    列表类型：</span><br><span class="line">                    names = [<span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;李四&#x27;</span>, <span class="string">&#x27;王五&#x27;</span>, <span class="string">&#x27;赵六&#x27;</span>]</span><br><span class="line"></span><br><span class="line">                    元组类型：</span><br><span class="line">                    nums = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">                    集合类型:</span><br><span class="line">                    x = &#123;<span class="number">9</span>, <span class="string">&#x27;Hello&#x27;</span>, <span class="number">10</span>, <span class="string">&#x27;你好！&#x27;</span>&#125;</span><br><span class="line"></span><br><span class="line">                    字典类型：</span><br><span class="line">                    person = &#123;<span class="string">&#x27;name&#x27;</span>: <span class="string">&#x27;张三&#x27;</span>, <span class="string">&#x27;age&#x27;</span>: <span class="number">18</span>, <span class="string">&#x27;height&#x27;</span>: <span class="string">&#x27;18湖北0cm&#x27;</span>, <span class="string">&#x27;addr&#x27;</span>: <span class="string">&#x27;湖北&#x27;</span>&#125;</span><br><span class="line">            </span><br><span class="line">                (<span class="number">2</span>) 查看数据类型：</span><br><span class="line">                    </span><br><span class="line">                        print(type(a)) <span class="comment">#&lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line">                        print(type(b)) <span class="comment"># &lt;class &#x27;float&#x27;&gt;</span></span><br><span class="line">                        print(type(c)) <span class="comment"># &lt;class &#x27;complex&#x27;&gt;</span></span><br><span class="line">                        print(type(d)) <span class="comment"># &lt;class &#x27;str&#x27;&gt;</span></span><br><span class="line">                        print(type(e)) <span class="comment"># &lt;class &#x27;bool&#x27;&gt;</span></span><br><span class="line">                        print(type(f)) <span class="comment"># &lt;class &#x27;bool&#x27;&gt;</span></span><br><span class="line">                        print(type(names)) <span class="comment"># &lt;class &#x27;list&#x27;&gt;</span></span><br><span class="line">                        print(type(nums)) <span class="comment"># &lt;class &#x27;tuple&#x27;&gt;</span></span><br><span class="line">                        print(type(x)) <span class="comment"># &lt;class &#x27;set&#x27;&gt;</span></span><br><span class="line">                        print(type(person)) <span class="comment"># &lt;class &#x27;dict&#x27;&gt;</span></span><br><span class="line">                </span><br></pre></td></tr></table></figure>
+    <title>2. 关键字的概念与特征</title>
+    <url>/2020/08/17/2.%20%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%89%B9%E5%BE%81/</url>
+    <content><![CDATA[<h1 id="关键字的概念与特征"><a href="#关键字的概念与特征" class="headerlink" title="关键字的概念与特征"></a>关键字的概念与特征</h1><h2 id="关键字："><a href="#关键字：" class="headerlink" title="关键字："></a>关键字：</h2><h3 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h3><p>有特殊含义的、被保留的、不能随意使用的字符，叫做<strong>关键字</strong></p>
+<h3 id="2-特征（特点）："><a href="#2-特征（特点）：" class="headerlink" title="2. 特征（特点）："></a>2. 特征（特点）：</h3><ul>
+<li><p>字母完全小写</p>
+</li>
+<li><p>在增强版的记事本当中（例如Notepad++）有特殊颜色</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java基础知识</category>
+      </categories>
+      <tags>
+        <tag>Java基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3. 标识符的概念与规则</title>
+    <url>/2020/08/17/3.%20%E6%A0%87%E8%AF%86%E7%AC%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%A7%84%E5%88%99/</url>
+    <content><![CDATA[<h1 id="标识符的概念与规则"><a href="#标识符的概念与规则" class="headerlink" title="标识符的概念与规则"></a>标识符的概念与规则</h1><h2 id="标识符："><a href="#标识符：" class="headerlink" title="标识符："></a>标识符：</h2><h3 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h3><p>是指在程序中，我们自己定义的内容。比如类的名字、方法的名字和变量的名字等等，都是标识符</p>
+<ul>
+<li>HelloWorld案例中，出现的标识符有类名称<code>HelloWorld</code></li>
+</ul>
+<h3 id="2-命名规则：硬性要求"><a href="#2-命名规则：硬性要求" class="headerlink" title="2. 命名规则：硬性要求"></a>2. 命名规则：<code>硬性要求</code></h3><ul>
+<li>标识符可以包含<code>英文字母26个(区分大小写)</code>、<code>0-9数字</code>、<code>_ (下划线)</code>和<code>$ (美元符号)</code></li>
+<li>标识符不能以数字开头</li>
+<li>标识符不能是关键字</li>
+</ul>
+<h3 id="3-命名规范：软性要求"><a href="#3-命名规范：软性要求" class="headerlink" title="3. 命名规范：软性要求"></a>3. 命名规范：<code>软性要求</code></h3><ul>
+<li><p>类名规范：每个单词的首字母大写（大驼峰式），例如<code>HelloWorld</code></p>
+</li>
+<li><p>变量名规范：第一个单词的首字母小写，后面每个单词的首字母大写（小驼峰式），例如<code>helloWoreld</code></p>
+</li>
+<li><p>方法名规范：同变量名（与变量名规范相同）</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java基础知识</category>
+      </categories>
+      <tags>
+        <tag>Java基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4. 常量的概念与分类</title>
+    <url>/2020/08/17/4.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%88%86%E7%B1%BB/</url>
+    <content><![CDATA[<h1 id="常量的概念与分类"><a href="#常量的概念与分类" class="headerlink" title="常量的概念与分类"></a>常量的概念与分类</h1><h2 id="常量："><a href="#常量：" class="headerlink" title="常量："></a>常量：</h2><h3 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h3><p>在程序运行期间，固定不变的量</p>
+<h3 id="2-分类："><a href="#2-分类：" class="headerlink" title="2. 分类："></a>2. 分类：</h3><ul>
+<li>字符串常量：凡是用双引号引起来的部分，叫做字符串常量。例如：”abc”、 “Hello”、 “123”</li>
+<li>整数常量：直接写上的数字，没有小数点。例如：100、 200、 0、 -150</li>
+<li>浮点数常量：直接写上的数字，有小数点，相当于小数。例如：2.5、 -3.14、 0.0</li>
+<li>字符常量：凡是用单引号引起来的单个字符，就叫做字符常量。例如：’A’、 ‘b’、 ‘9’、 ‘中’</li>
+<li>布尔常量：只有两种取值。true、 false    即  对/错 真/假</li>
+<li>空常量：null。代表没有任何数据</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java基础知识</category>
+      </categories>
+      <tags>
+        <tag>Java基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>5. 常量的打印输出</title>
+    <url>/2020/08/17/5.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%89%93%E5%8D%B0%E8%BE%93%E5%87%BA/</url>
+    <content><![CDATA[<h1 id="常量的打印输出"><a href="#常量的打印输出" class="headerlink" title="常量的打印输出"></a>常量的打印输出</h1><h3 id="字符串常量："><a href="#字符串常量：" class="headerlink" title="字符串常量："></a>字符串常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;ABC&quot;</span>); <span class="comment">// ABC</span></span><br><span class="line">System.out.println(<span class="string">&quot;&quot;</span>); <span class="comment">// 字符串两个双引号中间的内容为空</span></span><br><span class="line">System.out.println(<span class="string">&quot;123&quot;</span>); <span class="comment">// 123</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="整数常量："><a href="#整数常量：" class="headerlink" title="整数常量："></a>整数常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="number">30</span>); <span class="comment">// 30</span></span><br><span class="line">System.out.println(-<span class="number">100</span>); <span class="comment">// -100</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="浮点数常量（小数）："><a href="#浮点数常量（小数）：" class="headerlink" title="浮点数常量（小数）："></a>浮点数常量（小数）：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="number">3.14</span>); <span class="comment">// 3.14</span></span><br><span class="line">System.out.println(-<span class="number">2.5</span>); <span class="comment">// -2.5</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="字符常量："><a href="#字符常量：" class="headerlink" title="字符常量："></a>字符常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&#x27;A&#x27;</span>); <span class="comment">// A</span></span><br><span class="line">System.out.println(<span class="string">&#x27;6&#x27;</span>); <span class="comment">// 6</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，没有不行</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;AB&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，有多个不行</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="布尔常量："><a href="#布尔常量：" class="headerlink" title="布尔常量："></a>布尔常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="keyword">true</span>); <span class="comment">// true</span></span><br><span class="line">System.out.println(<span class="keyword">false</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="空常量："><a href="#空常量：" class="headerlink" title="空常量："></a>空常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// System.out.println(null); // 错误写法！！！空常量不能直接用来打印输出</span></span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
-        <category>Python基础知识</category>
+        <category>Java基础知识</category>
       </categories>
       <tags>
-        <tag>Python基础语法</tag>
+        <tag>Java基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>6. 基本数据类型</title>
+    <url>/2020/08/17/6.%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<h1 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h1><h3 id="基本数据类型：（四类八种）"><a href="#基本数据类型：（四类八种）" class="headerlink" title="基本数据类型：（四类八种）"></a>基本数据类型：（四类八种）</h3><ul>
+<li><p>整数型：byte   short   int   long</p>
+</li>
+<li><p>浮点型：float   double</p>
+</li>
+<li><p>字符型：char</p>
+</li>
+<li><p>布尔型：boolean</p>
+</li>
+</ul>
+<p><img src="D:\Desktop\基本数据类型.png"></p>
+<h4 id="拓展：引用数据类型："><a href="#拓展：引用数据类型：" class="headerlink" title="拓展：引用数据类型："></a>拓展：引用数据类型：</h4><ul>
+<li>字符串</li>
+<li>数组</li>
+<li>类</li>
+<li>接口</li>
+<li>Lambda</li>
+</ul>
+<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><ul>
+<li><p>字符串不是基本数据类型，而是引用数据类型</p>
+</li>
+<li><p>浮点型可能只是一个近似值，并非精确的值</p>
+</li>
+<li><p>数据范围与字节数不一定相关，例如float数据范围比long更加广泛，但是float是4字节，long是8字节（科学计数法省空间）</p>
+</li>
+<li><p>浮点数当中默认类型是double。如果一定要使用float类型，需要加上一个后缀F；</p>
+<p>如果是整数，默认为int类型，如果一定好使用long类型，需要加上一个后缀L。推荐使用大写字母后缀</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java基础知识</category>
+      </categories>
+      <tags>
+        <tag>Java基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>7. 变量的概念与定义格式</title>
+    <url>/2020/08/17/7.%20%E5%8F%98%E9%87%8F%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="变量的概念与定义格式"><a href="#变量的概念与定义格式" class="headerlink" title="变量的概念与定义格式"></a>变量的概念与定义格式</h1><h2 id="变量："><a href="#变量：" class="headerlink" title="变量："></a>变量：</h2><h3 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h3><p>程序运行期间，内容可以发生改变的量，即不固定的量</p>
+<h3 id="2-定义格式："><a href="#2-定义格式：" class="headerlink" title="2. 定义格式："></a>2. 定义格式：</h3><h4 id="分两步格式："><a href="#分两步格式：" class="headerlink" title="分两步格式："></a>分两步格式：</h4><ul>
+<li><p>数据类型 变量名称; <code>创建了一个变量</code></p>
+<p>变量名称 = 数据值; <code>赋值，将右边的数据值，赋值交给左边的变量</code></p>
+</li>
+</ul>
+<h4 id="一步到位格式："><a href="#一步到位格式：" class="headerlink" title="一步到位格式："></a>一步到位格式：</h4><ul>
+<li>数据类型 变量名称 = 数据值; <code>在创建一个变量的同时，立刻放入指定的数据值</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java基础知识</category>
+      </categories>
+      <tags>
+        <tag>Java基础语法</tag>
       </tags>
   </entry>
 </search>
