@@ -44,6 +44,28 @@
       </tags>
   </entry>
   <entry>
+    <title>10. 数据类型转换_自动转换</title>
+    <url>/2020/08/18/10.%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2_%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<h1 id="数据类型转换-自动转换"><a href="#数据类型转换-自动转换" class="headerlink" title="数据类型转换_自动转换"></a>数据类型转换_自动转换</h1><h4 id="当数据类型不一样时，将会发生数据类型转换"><a href="#当数据类型不一样时，将会发生数据类型转换" class="headerlink" title="当数据类型不一样时，将会发生数据类型转换"></a>当数据类型不一样时，将会发生数据类型转换</h4><ul>
+<li>自动类型转换（隐式）<pre><code>1. 特点： 代码不需要进行特殊处理，自动完成
+ 2. 规则： 数据范围从小到大</code></pre>
+</li>
+</ul>
+<ul>
+<li>强制类型转换（显式）</li>
+</ul>
+<h5 id="自动类型转换："><a href="#自动类型转换：" class="headerlink" title="自动类型转换："></a>自动类型转换：</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> </span><br><span class="line">    <span class="comment">// 左边是long类型，右边是默认的int类型，左右不一样</span></span><br><span class="line">    <span class="comment">// 一个等号代表赋值，将右侧的int常量(100)，交给左侧的long变量(num1)进行存储</span></span><br><span class="line">    <span class="comment">// 这一行代码发生了&lt;自动类型转换&gt;</span></span><br><span class="line">    <span class="comment">//                 即：    int --&gt; long,符合了数据范围从小到大的要求    </span></span><br><span class="line">    <span class="keyword">long</span> num1 = <span class="number">100</span>;</span><br><span class="line">    System.out.println(num1); <span class="comment">// 100</span></span><br></pre></td></tr></table></figure>
+
+<p>本文件未完结。。。</p>
+]]></content>
+      <categories>
+        <category>Java基础知识</category>
+      </categories>
+      <tags>
+        <tag>Java基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>3. 标识符的概念与规则</title>
     <url>/2020/08/17/3.%20%E6%A0%87%E8%AF%86%E7%AC%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%A7%84%E5%88%99/</url>
     <content><![CDATA[<h1 id="标识符的概念与规则"><a href="#标识符的概念与规则" class="headerlink" title="标识符的概念与规则"></a>标识符的概念与规则</h1><h2 id="标识符："><a href="#标识符：" class="headerlink" title="标识符："></a>标识符：</h2><h3 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h3><p>是指在程序中，我们自己定义的内容。比如类的名字、方法的名字和变量的名字等等，都是标识符</p>
@@ -83,39 +105,6 @@
 <li>布尔常量：只有两种取值。true、 false    即  对/错 真/假</li>
 <li>空常量：null。代表没有任何数据</li>
 </ul>
-]]></content>
-      <categories>
-        <category>Java基础知识</category>
-      </categories>
-      <tags>
-        <tag>Java基础语法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>5. 常量的打印输出</title>
-    <url>/2020/08/17/5.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%89%93%E5%8D%B0%E8%BE%93%E5%87%BA/</url>
-    <content><![CDATA[<h1 id="常量的打印输出"><a href="#常量的打印输出" class="headerlink" title="常量的打印输出"></a>常量的打印输出</h1><h3 id="字符串常量："><a href="#字符串常量：" class="headerlink" title="字符串常量："></a>字符串常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;ABC&quot;</span>); <span class="comment">// ABC</span></span><br><span class="line">System.out.println(<span class="string">&quot;&quot;</span>); <span class="comment">// 字符串两个双引号中间的内容为空</span></span><br><span class="line">System.out.println(<span class="string">&quot;123&quot;</span>); <span class="comment">// 123</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="整数常量："><a href="#整数常量：" class="headerlink" title="整数常量："></a>整数常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="number">30</span>); <span class="comment">// 30</span></span><br><span class="line">System.out.println(-<span class="number">100</span>); <span class="comment">// -100</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="浮点数常量（小数）："><a href="#浮点数常量（小数）：" class="headerlink" title="浮点数常量（小数）："></a>浮点数常量（小数）：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="number">3.14</span>); <span class="comment">// 3.14</span></span><br><span class="line">System.out.println(-<span class="number">2.5</span>); <span class="comment">// -2.5</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="字符常量："><a href="#字符常量：" class="headerlink" title="字符常量："></a>字符常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&#x27;A&#x27;</span>); <span class="comment">// A</span></span><br><span class="line">System.out.println(<span class="string">&#x27;6&#x27;</span>); <span class="comment">// 6</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，没有不行</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;AB&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，有多个不行</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="布尔常量："><a href="#布尔常量：" class="headerlink" title="布尔常量："></a>布尔常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="keyword">true</span>); <span class="comment">// true</span></span><br><span class="line">System.out.println(<span class="keyword">false</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="空常量："><a href="#空常量：" class="headerlink" title="空常量："></a>空常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// System.out.println(null); // 错误写法！！！空常量不能直接用来打印输出</span></span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>Java基础知识</category>
@@ -176,6 +165,78 @@
 <h4 id="一步到位格式："><a href="#一步到位格式：" class="headerlink" title="一步到位格式："></a>一步到位格式：</h4><ul>
 <li>数据类型 变量名称 = 数据值; <code>在创建一个变量的同时，立刻放入指定的数据值</code></li>
 </ul>
+]]></content>
+      <categories>
+        <category>Java基础知识</category>
+      </categories>
+      <tags>
+        <tag>Java基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>5. 常量的打印输出</title>
+    <url>/2020/08/17/5.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%89%93%E5%8D%B0%E8%BE%93%E5%87%BA/</url>
+    <content><![CDATA[<h1 id="常量的打印输出"><a href="#常量的打印输出" class="headerlink" title="常量的打印输出"></a>常量的打印输出</h1><h3 id="字符串常量："><a href="#字符串常量：" class="headerlink" title="字符串常量："></a>字符串常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;ABC&quot;</span>); <span class="comment">// ABC</span></span><br><span class="line">System.out.println(<span class="string">&quot;&quot;</span>); <span class="comment">// 字符串两个双引号中间的内容为空</span></span><br><span class="line">System.out.println(<span class="string">&quot;123&quot;</span>); <span class="comment">// 123</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="整数常量："><a href="#整数常量：" class="headerlink" title="整数常量："></a>整数常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="number">30</span>); <span class="comment">// 30</span></span><br><span class="line">System.out.println(-<span class="number">100</span>); <span class="comment">// -100</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="浮点数常量（小数）："><a href="#浮点数常量（小数）：" class="headerlink" title="浮点数常量（小数）："></a>浮点数常量（小数）：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="number">3.14</span>); <span class="comment">// 3.14</span></span><br><span class="line">System.out.println(-<span class="number">2.5</span>); <span class="comment">// -2.5</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="字符常量："><a href="#字符常量：" class="headerlink" title="字符常量："></a>字符常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&#x27;A&#x27;</span>); <span class="comment">// A</span></span><br><span class="line">System.out.println(<span class="string">&#x27;6&#x27;</span>); <span class="comment">// 6</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，没有不行</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;AB&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，有多个不行</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="布尔常量："><a href="#布尔常量：" class="headerlink" title="布尔常量："></a>布尔常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="keyword">true</span>); <span class="comment">// true</span></span><br><span class="line">System.out.println(<span class="keyword">false</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="空常量："><a href="#空常量：" class="headerlink" title="空常量："></a>空常量：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// System.out.println(null); // 错误写法！！！空常量不能直接用来打印输出</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java基础知识</category>
+      </categories>
+      <tags>
+        <tag>Java基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9. 变量的注意事项</title>
+    <url>/2020/08/18/9.%20%E5%8F%98%E9%87%8F%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    <content><![CDATA[<h1 id="变量的注意事项"><a href="#变量的注意事项" class="headerlink" title="变量的注意事项"></a>变量的注意事项</h1><ul>
+<li><p>如果创建多个变量，那么变量之间的名称不可以重复</p>
+</li>
+<li><p>对于float和long类型来说，字母后缀F和L不要丢掉</p>
+</li>
+<li><p>如果使用byte或者short类型的变量，那么右侧的数据值不能超过左侧类型的范围</p>
+</li>
+<li><p>没有进行赋值的变量不能直接使用，一定要赋值之后才能使用</p>
+</li>
+<li><p>变量使用不能超过作用域的范围</p>
+<blockquote>
+<p>作用域：从定义变量的一行开始，一直到直接所属的大括号结束为止</p>
+</blockquote>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java基础知识</category>
+      </categories>
+      <tags>
+        <tag>Java基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>8. 变量的基本使用</title>
+    <url>/2020/08/18/8.%20%E5%8F%98%E9%87%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="变量的基本使用"><a href="#变量的基本使用" class="headerlink" title="变量的基本使用"></a>变量的基本使用</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> </span><br><span class="line">    <span class="keyword">int</span> num1 = <span class="number">10</span>;</span><br><span class="line">    <span class="comment">// 当打印输出变量名称的时候，显示出来的是变量的内容</span></span><br><span class="line">    System.out.println(num1); <span class="comment">// 10</span></span><br><span class="line">    </span><br><span class="line"><span class="number">2.</span> </span><br><span class="line">    <span class="keyword">int</span> num2 = <span class="number">10</span>;</span><br><span class="line">    System.out.println(num2); <span class="comment">// 10</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 改变变量当中本来的数字(10)，变成新的数字(20)</span></span><br><span class="line">    <span class="keyword">int</span> num2 = <span class="number">20</span>;</span><br><span class="line">    System.out.println(num2); <span class="comment">// 20</span></span><br><span class="line"></span><br><span class="line"><span class="number">3.</span></span><br><span class="line">    <span class="comment">// 将一个变量的内容，赋值交给另一个变量</span></span><br><span class="line">    <span class="keyword">int</span> <span class="number">10</span> num3 = <span class="number">10</span>;</span><br><span class="line">    System.out.println(num3); <span class="comment">// 10</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 右侧的变量名称num3已经存在，里面装的是int类型(10)</span></span><br><span class="line">    <span class="comment">// 将右侧变量里面的值(10)，向左交给num4变量进行存储</span></span><br><span class="line">    <span class="keyword">int</span> num4 = num3;</span><br><span class="line">    System.out.println(num4); <span class="comment">// 10</span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>Java基础知识</category>
