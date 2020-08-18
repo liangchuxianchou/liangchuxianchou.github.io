@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     
     <title>
-        5. 常量的打印输出 | My blog
+        6. 基本数据类型 | My blog
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
@@ -128,13 +128,13 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <h3><a class="title-hover-animation">5. 常量的打印输出</a></h3>
+            <h3><a class="title-hover-animation">6. 基本数据类型</a></h3>
         </div>
 
         <div class="meta-info">
             <div class="article-meta-info">
     <span class="article-date article-meta-item">
-        <i class="fa fa-calendar-o"></i> 2020-08-17 20:57:52
+        <i class="fa fa-calendar-o"></i> 2020-08-18 21:54:11
     </span>
     
         <span class="article-categories article-meta-item">
@@ -165,28 +165,35 @@
         </div>
 
         <div class="article-content markdown-body">
-            <h1 id="常量的打印输出"><a href="#常量的打印输出" class="headerlink" title="常量的打印输出"></a>常量的打印输出</h1><h3 id="字符串常量："><a href="#字符串常量：" class="headerlink" title="字符串常量："></a>字符串常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;ABC&quot;</span>); <span class="comment">// ABC</span></span><br><span class="line">System.out.println(<span class="string">&quot;&quot;</span>); <span class="comment">// 字符串两个双引号中间的内容为空</span></span><br><span class="line">System.out.println(<span class="string">&quot;123&quot;</span>); <span class="comment">// 123</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="整数常量："><a href="#整数常量：" class="headerlink" title="整数常量："></a>整数常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="number">30</span>); <span class="comment">// 30</span></span><br><span class="line">System.out.println(-<span class="number">100</span>); <span class="comment">// -100</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="浮点数常量（小数）："><a href="#浮点数常量（小数）：" class="headerlink" title="浮点数常量（小数）："></a>浮点数常量（小数）：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="number">3.14</span>); <span class="comment">// 3.14</span></span><br><span class="line">System.out.println(-<span class="number">2.5</span>); <span class="comment">// -2.5</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="字符常量："><a href="#字符常量：" class="headerlink" title="字符常量："></a>字符常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&#x27;A&#x27;</span>); <span class="comment">// A</span></span><br><span class="line">System.out.println(<span class="string">&#x27;6&#x27;</span>); <span class="comment">// 6</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，没有不行</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;AB&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，有多个不行</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="布尔常量："><a href="#布尔常量：" class="headerlink" title="布尔常量："></a>布尔常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="keyword">true</span>); <span class="comment">// true</span></span><br><span class="line">System.out.println(<span class="keyword">false</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="空常量："><a href="#空常量：" class="headerlink" title="空常量："></a>空常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// System.out.println(null); // 错误写法！！！空常量不能直接用来打印输出</span></span><br></pre></td></tr></table></figure>
-
+            <h1 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h1><h3 id="基本数据类型：（四类八种）"><a href="#基本数据类型：（四类八种）" class="headerlink" title="基本数据类型：（四类八种）"></a>基本数据类型：（四类八种）</h3><ul>
+<li><p>整数型：byte   short   int   long</p>
+</li>
+<li><p>浮点型：float   double</p>
+</li>
+<li><p>字符型：char</p>
+</li>
+<li><p>布尔型：boolean</p>
+</li>
+</ul>
+<p><img src="D:\Desktop\基本数据类型.png"></p>
+<h4 id="拓展：引用数据类型："><a href="#拓展：引用数据类型：" class="headerlink" title="拓展：引用数据类型："></a>拓展：引用数据类型：</h4><ul>
+<li>字符串</li>
+<li>数组</li>
+<li>类</li>
+<li>接口</li>
+<li>Lambda</li>
+</ul>
+<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><ul>
+<li><p>字符串不是基本数据类型，而是引用数据类型</p>
+</li>
+<li><p>浮点型可能只是一个近似值，并非精确的值</p>
+</li>
+<li><p>数据范围与字节数不一定相关，例如float数据范围比long更加广泛，但是float是4字节，long是8字节（科学计数法省空间）</p>
+</li>
+<li><p>浮点数当中默认类型是double。如果一定要使用float类型，需要加上一个后缀F；</p>
+<p>如果是整数，默认为int类型，如果一定好使用long类型，需要加上一个后缀L。推荐使用大写字母后缀</p>
+</li>
+</ul>
 
         </div>
 
@@ -195,9 +202,9 @@
                 <div class="article-prev">
                     <a class="prev btn"
                        rel="prev"
-                       href="/2020/08/17/6.%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"
+                       href="/2020/08/18/7.%20%E5%8F%98%E9%87%8F%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F/"
                     >
-                        <i class="fa fa-chevron-left"></i> <span class="post-nav-title-item">6. 基本数据类型</span><span class="post-nav-item">Prev posts</span>
+                        <i class="fa fa-chevron-left"></i> <span class="post-nav-title-item">7. 变量的概念与定义格式</span><span class="post-nav-item">Prev posts</span>
                     </a>
                 </div>
             
@@ -205,9 +212,9 @@
                 <div class="article-next">
                     <a class="next btn"
                        rel="next"
-                       href="/2020/08/17/4.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%88%86%E7%B1%BB/"
+                       href="/2020/08/18/5.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%89%93%E5%8D%B0%E8%BE%93%E5%87%BA/"
                     >
-                        <span class="post-nav-title-item">4. 常量的概念与分类</span><span class="post-nav-item">Next posts</span> <i class="fa fa-chevron-right"></i>
+                        <span class="post-nav-title-item">5. 常量的打印输出</span><span class="post-nav-item">Next posts</span> <i class="fa fa-chevron-right"></i>
                     </a>
                 </div>
             
@@ -232,7 +239,7 @@
     <div class="sidebar sidebar-post fade-in-down-animation">
         <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E9%87%8F%E7%9A%84%E6%89%93%E5%8D%B0%E8%BE%93%E5%87%BA"><span class="nav-number">1.</span> <span class="nav-text">常量的打印输出</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F%EF%BC%9A"><span class="nav-number">1.0.1.</span> <span class="nav-text">字符串常量：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B4%E6%95%B0%E5%B8%B8%E9%87%8F%EF%BC%9A"><span class="nav-number">1.0.2.</span> <span class="nav-text">整数常量：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E5%B8%B8%E9%87%8F%EF%BC%88%E5%B0%8F%E6%95%B0%EF%BC%89%EF%BC%9A"><span class="nav-number">1.0.3.</span> <span class="nav-text">浮点数常量（小数）：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E5%B8%B8%E9%87%8F%EF%BC%9A"><span class="nav-number">1.0.4.</span> <span class="nav-text">字符常量：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E5%B8%B8%E9%87%8F%EF%BC%9A"><span class="nav-number">1.0.5.</span> <span class="nav-text">布尔常量：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A9%BA%E5%B8%B8%E9%87%8F%EF%BC%9A"><span class="nav-number">1.0.6.</span> <span class="nav-text">空常量：</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">基本数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%9A%EF%BC%88%E5%9B%9B%E7%B1%BB%E5%85%AB%E7%A7%8D%EF%BC%89"><span class="nav-number">1.0.1.</span> <span class="nav-text">基本数据类型：（四类八种）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8B%93%E5%B1%95%EF%BC%9A%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">拓展：引用数据类型：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%9A"><span class="nav-number">1.0.2.</span> <span class="nav-text">注意事项：</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
     </div>
