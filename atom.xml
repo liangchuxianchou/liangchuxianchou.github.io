@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-20T12:56:41.983Z</updated>
+  <updated>2020-08-21T12:48:32.618Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>12. 数据类型转换_注意事项</title>
+    <link href="http://yoursite.com/2020/08/21/12.%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2_%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>http://yoursite.com/2020/08/21/12.%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2_%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
+    <published>2020-08-21T10:14:54.540Z</published>
+    <updated>2020-08-21T12:48:32.618Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="数据类型转换-注意事项"><a href="#数据类型转换-注意事项" class="headerlink" title="数据类型转换_注意事项"></a>数据类型转换_注意事项</h1><ul><li><p>注意事项</p><ol><li><p>强制类型转换一般不推荐使用，因为如果<strong>逻辑上右侧数值大小超过左侧类型的范围</strong>，就可能发生</p><p>&lt;数据溢出&gt;、&lt;精度损失&gt;</p><p>​                        如图所示：</p><p>​                                            <img src="D:\百度网盘内容\01.会员版(2.0)-就业课(2.0">-Java基础语法\02. 【数据类型转换、运算符、方法入门】\03_参考\01-强制类型转换的数据溢出问题.png)</p></li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span></span><br><span class="line">    <span class="comment">// 左边是int类型，右边是long类型，左右不一样</span></span><br><span class="line">    <span class="comment">// long --&gt; int, 不是从小到大</span></span><br><span class="line">    <span class="comment">// 不能发生自动类型转换</span></span><br><span class="line">    <span class="comment">// 格式：范围小的类型 范围小的变量名 = (范围小的类型) 原本范围大的数据;</span></span><br><span class="line">    <span class="keyword">int</span> num01 = (<span class="keyword">int</span>) <span class="number">100L</span>; <span class="comment">// 注意：逻辑上右侧数值大小并没有超过左侧类型的范围，不会发生数据溢出</span></span><br><span class="line">    System.out.println(num01); <span class="comment">// 100(int类型)</span></span><br><span class="line"></span><br><span class="line"><span class="number">2.</span></span><br><span class="line">    <span class="comment">// long强制转换成为int类型</span></span><br><span class="line">    <span class="keyword">int</span> num02 = (<span class="keyword">int</span>) <span class="number">10000000000L</span>; <span class="comment">// 右边的数据范围超出了左侧的数据范围，发生了数据溢出</span></span><br><span class="line">    System.out.println(num02); <span class="comment">// 1410065408</span></span><br><span class="line"></span><br><span class="line"><span class="number">3.</span></span><br><span class="line">    <span class="comment">// double强制转换成为int类型</span></span><br><span class="line">    <span class="keyword">int</span> num03 = (<span class="keyword">int</span>) <span class="number">3.14</span>; <span class="comment">// 3.14</span></span><br><span class="line">    System.out.println(num03); <span class="comment">// 这并不是四舍五入，所有的小数位都会被舍弃掉</span></span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;数据类型转换-注意事项&quot;&gt;&lt;a href=&quot;#数据类型转换-注意事项&quot; class=&quot;headerlink&quot; title=&quot;数据类型转换_注意事项&quot;&gt;&lt;/a&gt;数据类型转换_注意事项&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;注意事项&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;强制类型</summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>11. 数据类型转换_强制转换</title>
