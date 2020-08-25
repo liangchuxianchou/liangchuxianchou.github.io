@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-22T11:41:50.785Z</updated>
+  <updated>2020-08-21T12:48:32.618Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,74 +17,304 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>3. HTML标签_文件标签</title>
-    <link href="http://yoursite.com/2020/08/24/HTML%E6%A0%87%E7%AD%BE_%E6%96%87%E4%BB%B6%E6%A0%87%E7%AD%BE/"/>
-    <id>http://yoursite.com/2020/08/24/HTML%E6%A0%87%E7%AD%BE_%E6%96%87%E4%BB%B6%E6%A0%87%E7%AD%BE/</id>
-    <published>2020-08-24T10:02:27.562Z</published>
-    <updated>2020-08-22T11:41:50.785Z</updated>
+    <title>12. 数据类型转换_注意事项</title>
+    <link href="http://yoursite.com/2020/08/25/12.%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2_%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>http://yoursite.com/2020/08/25/12.%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2_%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
+    <published>2020-08-25T04:11:35.324Z</published>
+    <updated>2020-08-21T12:48:32.618Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="HTML标签-文件标签"><a href="#HTML标签-文件标签" class="headerlink" title="HTML标签_文件标签"></a>HTML标签_文件标签</h1><h3 id="1-文件标签："><a href="#1-文件标签：" class="headerlink" title="1. 文件标签："></a>1. 文件标签：</h3><p>构成html最基本的标签</p><h4 id="种类："><a href="#种类：" class="headerlink" title="种类："></a>种类：</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>: html文档的根标签</span><br><span class="line">        此元素可告知浏览器其自身是一个 HTML 文档。</span><br><span class="line">        <span class="tag">&lt;<span class="name">html</span>&gt;</span> 与 <span class="tag">&lt;/<span class="name">html</span>&gt;</span> 标签限定了文档的开始点和结束点，在它们之间是文档的头部和主体。文档的头部由 <span class="tag">&lt;<span class="name">head</span>&gt;</span> 标签定义，而主体由 <span class="tag">&lt;<span class="name">body</span>&gt;</span> 标签定义</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>: 头标签。用于指定html文档的一些属性。引入外部的资源</span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>: 标题标签</span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span>: 体标签</span><br><span class="line">    </span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span>: html5中定义该文档为html文档</span><br><span class="line">                <span class="meta">&lt;!DOCTYPE&gt;</span> 声明必须是 HTML 文档的第一行，位于 <span class="tag">&lt;<span class="name">html</span>&gt;</span> 标签之前。</span><br><span class="line">                <span class="meta">&lt;!DOCTYPE&gt;</span> 声明不是 HTML 标签；它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令。</span><br></pre></td></tr></table></figure><p>​    </p><h3 id="2-文本标签："><a href="#2-文本标签：" class="headerlink" title="2. 文本标签："></a>2. 文本标签：</h3><p>和文本有关的标签</p><h4 id="种类：-1"><a href="#种类：-1" class="headerlink" title="种类："></a>种类：</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 我是一行注释！ --&gt;</span>: 注释</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span> ~ <span class="tag">&lt;<span class="name">6</span>&gt;</span>: 标题标签。</span><br><span class="line">    h1 ~ h6: 字体大小递减</span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>: 段落标签</span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span>: 换行标签</span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span>: 展示一条水平线</span><br><span class="line">    属性：</span><br><span class="line">        1. color: 颜色</span><br><span class="line">        2. width: 宽度</span><br><span class="line">        3. size: 高度</span><br><span class="line">        4. align: 对齐方式</span><br><span class="line">            (1) center: 居中</span><br><span class="line">            (2) left: 左对齐</span><br><span class="line">            (3) right: 右对齐</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>: 字体加粗</span><br><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>: 字体斜体</span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>: 文本居中</span><br><span class="line"><span class="tag">&lt;<span class="name">font</span>&gt;</span>: </span><br><span class="line">    属性：</span><br><span class="line">        1. color: 颜色</span><br><span class="line">        2. size: 大小</span><br><span class="line">        3. face: 字体</span><br><span class="line">    </span><br><span class="line">    属性定义：</span><br><span class="line">        color:</span><br><span class="line">            1. 英文单词: red, green, blue</span><br><span class="line">            2. rgb(值1, 值2, 值3)</span><br><span class="line">                    值的范围: 0~255之间。如: rgb(0,0,255)</span><br><span class="line">            3. (html5推荐) #值1值2值3</span><br><span class="line">                值的范围: 00~ff之间。如: #ff00ff</span><br><span class="line">    </span><br><span class="line">        width:</span><br><span class="line">            1. 数值: width=&quot;20&quot;, 数值的单位默认是 px(像素)</span><br><span class="line">            2. 数值%: 占比相对父元素的比例</span><br><span class="line">                    父元素: 如: </span><br><span class="line">                        <span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">                                </span><br><span class="line">                            <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">                                </span><br><span class="line">                        <span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">body</span>&gt;</span>的父元素是<span class="tag">&lt;<span class="name">html</span>&gt;</span>，<span class="tag">&lt;<span class="name">body</span>&gt;</span>是<span class="tag">&lt;<span class="name">html</span>&gt;</span>的子元素</span><br></pre></td></tr></table></figure><h3 id="3-图片标签："><a href="#3-图片标签：" class="headerlink" title="3. 图片标签："></a>3. 图片标签：</h3><p>和图片有关的标签</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="数据类型转换-注意事项"><a href="#数据类型转换-注意事项" class="headerlink" title="数据类型转换_注意事项"></a>数据类型转换_注意事项</h1><ul><li><p>注意事项</p><ol><li><p>强制类型转换一般不推荐使用，因为如果<strong>逻辑上右侧数值大小超过左侧类型的范围</strong>，就可能发生</p><p>&lt;数据溢出&gt;、&lt;精度损失&gt;</p><p>​                        如图所示：</p><p>​                                            <img src="D:\百度网盘内容\01.会员版(2.0)-就业课(2.0">-Java基础语法\02. 【数据类型转换、运算符、方法入门】\03_参考\01-强制类型转换的数据溢出问题.png)</p></li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span></span><br><span class="line">    <span class="comment">// 左边是int类型，右边是long类型，左右不一样</span></span><br><span class="line">    <span class="comment">// long --&gt; int, 不是从小到大</span></span><br><span class="line">    <span class="comment">// 不能发生自动类型转换</span></span><br><span class="line">    <span class="comment">// 格式：范围小的类型 范围小的变量名 = (范围小的类型) 原本范围大的数据;</span></span><br><span class="line">    <span class="keyword">int</span> num01 = (<span class="keyword">int</span>) <span class="number">100L</span>; <span class="comment">// 注意：逻辑上右侧数值大小并没有超过左侧类型的范围，不会发生数据溢出</span></span><br><span class="line">    System.out.println(num01); <span class="comment">// 100(int类型)</span></span><br><span class="line"></span><br><span class="line"><span class="number">2.</span></span><br><span class="line">    <span class="comment">// long强制转换成为int类型</span></span><br><span class="line">    <span class="keyword">int</span> num02 = (<span class="keyword">int</span>) <span class="number">10000000000L</span>; <span class="comment">// 右边的数据范围超出了左侧的数据范围，发生了数据溢出</span></span><br><span class="line">    System.out.println(num02); <span class="comment">// 1410065408</span></span><br><span class="line"></span><br><span class="line"><span class="number">3.</span></span><br><span class="line">    <span class="comment">// double强制转换成为int类型</span></span><br><span class="line">    <span class="keyword">int</span> num03 = (<span class="keyword">int</span>) <span class="number">3.14</span>; <span class="comment">// 3.14</span></span><br><span class="line">    System.out.println(num03); <span class="comment">// 这并不是四舍五入，所有的小数位都会被舍弃掉</span></span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;HTML标签-文件标签&quot;&gt;&lt;a href=&quot;#HTML标签-文件标签&quot; class=&quot;headerlink&quot; title=&quot;HTML标签_文件标签&quot;&gt;&lt;/a&gt;HTML标签_文件标签&lt;/h1&gt;&lt;h3 id=&quot;1-文件标签：&quot;&gt;&lt;a href=&quot;#1-文件标签：&quot; c</summary>
+    <summary type="html">&lt;h1 id=&quot;数据类型转换-注意事项&quot;&gt;&lt;a href=&quot;#数据类型转换-注意事项&quot; class=&quot;headerlink&quot; title=&quot;数据类型转换_注意事项&quot;&gt;&lt;/a&gt;数据类型转换_注意事项&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;注意事项&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;强制类型</summary>
       
     
     
     
-    <category term="HTML" scheme="http://yoursite.com/categories/HTML/"/>
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
   <entry>
-    <title>2. HTML快速入门</title>
-    <link href="http://yoursite.com/2020/08/24/HTML%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
-    <id>http://yoursite.com/2020/08/24/HTML%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</id>
-    <published>2020-08-24T10:02:27.456Z</published>
-    <updated>2020-08-22T11:41:29.897Z</updated>
+    <title>11. 数据类型转换_强制转换</title>
+    <link href="http://yoursite.com/2020/08/25/11.%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2_%E5%BC%BA%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
+    <id>http://yoursite.com/2020/08/25/11.%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2_%E5%BC%BA%E5%88%B6%E8%BD%AC%E6%8D%A2/</id>
+    <published>2020-08-25T04:11:35.319Z</published>
+    <updated>2020-08-20T12:56:41.983Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="HTML快速入门"><a href="#HTML快速入门" class="headerlink" title="HTML快速入门"></a>HTML快速入门</h1><h3 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h3><ul><li><p>html 文档后缀名    .html   或者    .htm</p></li><li><h4 id="标签分为："><a href="#标签分为：" class="headerlink" title="标签分为："></a>标签分为：</h4><ol><li>围堵标签：有开始标签和结束标签。如：</li></ol><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>    <span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><ol start="2"><li>自闭和标签：开始标签和结束标签在一起。如：</li></ol><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br></pre></td></tr></table></figure><ol start="3"><li>标签可以嵌套：</li></ol><p>需要正确嵌套，不能你中有我，我中有你</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--错误：--&gt;</span>    <span class="tag">&lt;<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">b</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--正确：--&gt;</span>    <span class="tag">&lt;<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure><ol start="4"><li>在开始标签中可以定义属性。属性是由键值对构成的，值需要用 单引号/双引号 引起来</li><li>html的标签不区分大小写，但是强烈建议使用小写</li></ol></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="数据类型转换-强制转换"><a href="#数据类型转换-强制转换" class="headerlink" title="数据类型转换_强制转换"></a>数据类型转换_强制转换</h1><ul><li>自动类型转换（隐式）<ol><li>特点： 代码不需要进行特殊处理，自动完成</li><li>规则： 数据范围从小到大</li></ol></li></ul><ul><li>强制类型转换（显式）<ol><li>特点：代码需要进行特殊的格式处理，不能自动完成</li><li>格式：范围小的类型 范围小的变量名 = (范围小的类型) 原本范围大的数据;</li></ol></li></ul><h5 id="强制类型转换："><a href="#强制类型转换：" class="headerlink" title="强制类型转换："></a>强制类型转换：</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 左边是int类型，右边是long类型，左右不一样</span></span><br><span class="line"><span class="comment">// long --&gt; int，不是从小到大</span></span><br><span class="line"><span class="comment">// 不能发生自动类型转换</span></span><br><span class="line"><span class="comment">// 格式：范围小的类型 范围小的变量名 = (范围小的类型) 原本范围大的数据;</span></span><br><span class="line"><span class="keyword">int</span> num = (<span class="keyword">int</span>) <span class="number">100L</span>;</span><br><span class="line">System.out.println(num); <span class="comment">// 100</span></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;HTML快速入门&quot;&gt;&lt;a href=&quot;#HTML快速入门&quot; class=&quot;headerlink&quot; title=&quot;HTML快速入门&quot;&gt;&lt;/a&gt;HTML快速入门&lt;/h1&gt;&lt;h3 id=&quot;语法：&quot;&gt;&lt;a href=&quot;#语法：&quot; class=&quot;headerlink&quot; ti</summary>
+    <summary type="html">&lt;h1 id=&quot;数据类型转换-强制转换&quot;&gt;&lt;a href=&quot;#数据类型转换-强制转换&quot; class=&quot;headerlink&quot; title=&quot;数据类型转换_强制转换&quot;&gt;&lt;/a&gt;数据类型转换_强制转换&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;自动类型转换（隐式）&lt;ol&gt;
+&lt;li&gt;特点： 代码不需要</summary>
       
     
     
     
-    <category term="HTML" scheme="http://yoursite.com/categories/HTML/"/>
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
   <entry>
-    <title>1. HTML概念介绍</title>
-    <link href="http://yoursite.com/2020/08/24/HTML%E6%A6%82%E5%BF%B5%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://yoursite.com/2020/08/24/HTML%E6%A6%82%E5%BF%B5%E4%BB%8B%E7%BB%8D/</id>
-    <published>2020-08-24T10:02:27.449Z</published>
-    <updated>2020-08-22T11:40:20.144Z</updated>
+    <title>10. 数据类型转换_自动转换</title>
+    <link href="http://yoursite.com/2020/08/25/10.%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2_%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2/"/>
+    <id>http://yoursite.com/2020/08/25/10.%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2_%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2/</id>
+    <published>2020-08-25T04:11:35.314Z</published>
+    <updated>2020-08-20T12:47:40.015Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="HTML概念介绍"><a href="#HTML概念介绍" class="headerlink" title="HTML概念介绍"></a>HTML概念介绍</h1><h2 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h2><p><strong>超文本标记语言</strong>   Hyper Text Markup Language(HTML)</p><blockquote><p>HTML 是最基础的网页开发语言</p></blockquote><h4 id="超文本："><a href="#超文本：" class="headerlink" title="超文本："></a>超文本：</h4><p>超文本是用超链接的方法，将各种不同空间的文字信息组织在一起的网状文本</p><h4 id="标记语言："><a href="#标记语言：" class="headerlink" title="标记语言："></a>标记语言：</h4><ul><li>由标签构成的语言。 &lt;标签名称&gt;    如 html, xml</li><li>标记语言不是编程语言</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="数据类型转换-自动转换"><a href="#数据类型转换-自动转换" class="headerlink" title="数据类型转换_自动转换"></a>数据类型转换_自动转换</h1><h4 id="当数据类型不一样时，将会发生数据类型转换"><a href="#当数据类型不一样时，将会发生数据类型转换" class="headerlink" title="当数据类型不一样时，将会发生数据类型转换"></a>当数据类型不一样时，将会发生数据类型转换</h4><ul><li>自动类型转换（隐式）<ol><li>特点： 代码不需要进行特殊处理，自动完成</li><li>规则： 数据范围从小到大</li></ol></li></ul><ul><li>强制类型转换（显式）</li></ul><h5 id="自动类型转换："><a href="#自动类型转换：" class="headerlink" title="自动类型转换："></a>自动类型转换：</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> </span><br><span class="line">    <span class="comment">// 一个等号代表赋值，将右侧的int常量(100)，交给左侧的long变量(num1)进行存储</span></span><br><span class="line">    <span class="comment">// 左边是long类型，右边是默认的int类型，左右不一样</span></span><br><span class="line">    <span class="comment">// 这一行代码发生了&lt;自动类型转换&gt;</span></span><br><span class="line">    <span class="comment">//                 即：    int --&gt; long,符合了数据范围从小到大的规则    </span></span><br><span class="line">    <span class="keyword">long</span> num1 = <span class="number">100</span>;</span><br><span class="line">    System.out.println(num1); <span class="comment">// 100</span></span><br><span class="line"></span><br><span class="line"><span class="number">2.</span></span><br><span class="line">    <span class="comment">// 左边是double类型，右边是float类型，左右不一样</span></span><br><span class="line">    <span class="comment">// 这一行代码发生了&lt;自动类型转换&gt;</span></span><br><span class="line">    <span class="comment">//                 即：    float --&gt; double，符合了数据范围从小到大的规则</span></span><br><span class="line">    <span class="keyword">double</span> num2 = <span class="number">2.5F</span>;</span><br><span class="line">    System.out.println(num2); <span class="comment">// 2.5</span></span><br><span class="line"></span><br><span class="line"><span class="number">3.</span></span><br><span class="line">    <span class="comment">// 左边是float类型，右边是long类型，左右不一样</span></span><br><span class="line">    <span class="comment">// 这一行代码发生了&lt;自动类型转换&gt;</span></span><br><span class="line">    <span class="comment">//                 即：    long --&gt; float，符合了数据范围从小到大的规则</span></span><br><span class="line">    <span class="keyword">float</span> num3 = <span class="number">30L</span>;</span><br><span class="line">    System.out.println(num3); <span class="comment">// 30.0</span></span><br></pre></td></tr></table></figure><p>​    </p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;HTML概念介绍&quot;&gt;&lt;a href=&quot;#HTML概念介绍&quot; class=&quot;headerlink&quot; title=&quot;HTML概念介绍&quot;&gt;&lt;/a&gt;HTML概念介绍&lt;/h1&gt;&lt;h2 id=&quot;1-概念：&quot;&gt;&lt;a href=&quot;#1-概念：&quot; class=&quot;headerlink</summary>
+    <summary type="html">&lt;h1 id=&quot;数据类型转换-自动转换&quot;&gt;&lt;a href=&quot;#数据类型转换-自动转换&quot; class=&quot;headerlink&quot; title=&quot;数据类型转换_自动转换&quot;&gt;&lt;/a&gt;数据类型转换_自动转换&lt;/h1&gt;&lt;h4 id=&quot;当数据类型不一样时，将会发生数据类型转换&quot;&gt;&lt;a href</summary>
       
     
     
     
-    <category term="HTML" scheme="http://yoursite.com/categories/HTML/"/>
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>9. 变量的注意事项</title>
+    <link href="http://yoursite.com/2020/08/25/9.%20%E5%8F%98%E9%87%8F%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>http://yoursite.com/2020/08/25/9.%20%E5%8F%98%E9%87%8F%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
+    <published>2020-08-25T04:11:35.310Z</published>
+    <updated>2020-08-20T13:10:44.207Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="变量的注意事项"><a href="#变量的注意事项" class="headerlink" title="变量的注意事项"></a>变量的注意事项</h1><ul><li><p>如果创建多个变量，那么变量之间的名称不可以重复</p></li><li><p>对于float和long类型来说，字母后缀F和L不要丢掉</p></li><li><p>如果使用byte或者short类型的变量，那么右侧的数据值不能超过左侧类型的范围</p></li><li><p>没有进行赋值的变量不能直接使用，一定要赋值之后才能使用</p></li><li><p>变量使用不能超过作用域的范围</p><blockquote><p>作用域：从定义变量的一行开始，一直到直接所属的大括号结束为止</p></blockquote></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;变量的注意事项&quot;&gt;&lt;a href=&quot;#变量的注意事项&quot; class=&quot;headerlink&quot; title=&quot;变量的注意事项&quot;&gt;&lt;/a&gt;变量的注意事项&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如果创建多个变量，那么变量之间的名称不可以重复&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;</summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="变量" scheme="http://yoursite.com/tags/%E5%8F%98%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>8. 变量的基本使用</title>
+    <link href="http://yoursite.com/2020/08/25/8.%20%E5%8F%98%E9%87%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/08/25/8.%20%E5%8F%98%E9%87%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-08-25T04:11:35.301Z</published>
+    <updated>2020-08-20T13:10:31.689Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="变量的基本使用"><a href="#变量的基本使用" class="headerlink" title="变量的基本使用"></a>变量的基本使用</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> </span><br><span class="line">    <span class="keyword">int</span> num1 = <span class="number">10</span>;</span><br><span class="line">    <span class="comment">// 当打印输出变量名称的时候，显示出来的是变量的内容</span></span><br><span class="line">    System.out.println(num1); <span class="comment">// 10</span></span><br><span class="line">    </span><br><span class="line"><span class="number">2.</span> </span><br><span class="line">    <span class="keyword">int</span> num2 = <span class="number">10</span>;</span><br><span class="line">    System.out.println(num2); <span class="comment">// 10</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 改变变量当中本来的数字(10)，变成新的数字(20)</span></span><br><span class="line">    <span class="keyword">int</span> num2 = <span class="number">20</span>;</span><br><span class="line">    System.out.println(num2); <span class="comment">// 20</span></span><br><span class="line"></span><br><span class="line"><span class="number">3.</span></span><br><span class="line">    <span class="comment">// 将一个变量的内容，赋值交给另一个变量</span></span><br><span class="line">    <span class="keyword">int</span> <span class="number">10</span> num3 = <span class="number">10</span>;</span><br><span class="line">    System.out.println(num3); <span class="comment">// 10</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 右侧的变量名称num3已经存在，里面装的是int类型(10)</span></span><br><span class="line">    <span class="comment">// 将右侧变量里面的值(10)，向左交给num4变量进行存储</span></span><br><span class="line">    <span class="keyword">int</span> num4 = num3;</span><br><span class="line">    System.out.println(num4); <span class="comment">// 10</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;变量的基本使用&quot;&gt;&lt;a href=&quot;#变量的基本使用&quot; class=&quot;headerlink&quot; title=&quot;变量的基本使用&quot;&gt;&lt;/a&gt;变量的基本使用&lt;/h1&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;</summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="变量" scheme="http://yoursite.com/tags/%E5%8F%98%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>7. 变量的概念与定义格式</title>
+    <link href="http://yoursite.com/2020/08/25/7.%20%E5%8F%98%E9%87%8F%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F/"/>
+    <id>http://yoursite.com/2020/08/25/7.%20%E5%8F%98%E9%87%8F%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F/</id>
+    <published>2020-08-25T04:11:35.296Z</published>
+    <updated>2020-08-20T13:10:49.482Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="变量的概念与定义格式"><a href="#变量的概念与定义格式" class="headerlink" title="变量的概念与定义格式"></a>变量的概念与定义格式</h1><h2 id="变量："><a href="#变量：" class="headerlink" title="变量："></a>变量：</h2><h3 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h3><p>程序运行期间，内容可以发生改变的量，即不固定的量</p><h3 id="2-定义格式："><a href="#2-定义格式：" class="headerlink" title="2. 定义格式："></a>2. 定义格式：</h3><h4 id="分两步格式："><a href="#分两步格式：" class="headerlink" title="分两步格式："></a>分两步格式：</h4><ul><li><p>数据类型 变量名称;    <code>创建了一个变量</code></p><p>变量名称 = 数据值;    <code>赋值，将右边的数据值，赋值交给左边的变量</code></p></li></ul><h4 id="一步到位格式："><a href="#一步到位格式：" class="headerlink" title="一步到位格式："></a>一步到位格式：</h4><ul><li>数据类型 变量名称 = 数据值;    <code>在创建一个变量的同时，立刻放入指定的数据值</code></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;变量的概念与定义格式&quot;&gt;&lt;a href=&quot;#变量的概念与定义格式&quot; class=&quot;headerlink&quot; title=&quot;变量的概念与定义格式&quot;&gt;&lt;/a&gt;变量的概念与定义格式&lt;/h1&gt;&lt;h2 id=&quot;变量：&quot;&gt;&lt;a href=&quot;#变量：&quot; class=&quot;header</summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+    <category term="变量" scheme="http://yoursite.com/tags/%E5%8F%98%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>6. 基本数据类型</title>
+    <link href="http://yoursite.com/2020/08/25/6.%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://yoursite.com/2020/08/25/6.%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
+    <published>2020-08-25T04:11:35.292Z</published>
+    <updated>2020-08-17T13:02:40.904Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h1><h3 id="基本数据类型：（四类八种）"><a href="#基本数据类型：（四类八种）" class="headerlink" title="基本数据类型：（四类八种）"></a>基本数据类型：（四类八种）</h3><ul><li><p>整数型：byte   short   int   long</p></li><li><p>浮点型：float   double</p></li><li><p>字符型：char</p></li><li><p>布尔型：boolean</p></li></ul><p><img src="D:\Desktop\基本数据类型.png"></p><h4 id="拓展：引用数据类型："><a href="#拓展：引用数据类型：" class="headerlink" title="拓展：引用数据类型："></a>拓展：引用数据类型：</h4><ul><li>字符串</li><li>数组</li><li>类</li><li>接口</li><li>Lambda</li></ul><h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><ul><li><p>字符串不是基本数据类型，而是引用数据类型</p></li><li><p>浮点型可能只是一个近似值，并非精确的值</p></li><li><p>数据范围与字节数不一定相关，例如float数据范围比long更加广泛，但是float是4字节，long是8字节（科学计数法省空间）</p></li><li><p>浮点数当中默认类型是double。如果一定要使用float类型，需要加上一个后缀F；</p><p>如果是整数，默认为int类型，如果一定好使用long类型，需要加上一个后缀L。推荐使用大写字母后缀</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;基本数据类型&quot;&gt;&lt;a href=&quot;#基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;基本数据类型&quot;&gt;&lt;/a&gt;基本数据类型&lt;/h1&gt;&lt;h3 id=&quot;基本数据类型：（四类八种）&quot;&gt;&lt;a href=&quot;#基本数据类型：（四类八种）&quot; class=&quot;he</summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>5. 常量的打印输出</title>
+    <link href="http://yoursite.com/2020/08/25/5.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%89%93%E5%8D%B0%E8%BE%93%E5%87%BA/"/>
+    <id>http://yoursite.com/2020/08/25/5.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%89%93%E5%8D%B0%E8%BE%93%E5%87%BA/</id>
+    <published>2020-08-25T04:11:35.286Z</published>
+    <updated>2020-08-17T13:02:24.817Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="常量的打印输出"><a href="#常量的打印输出" class="headerlink" title="常量的打印输出"></a>常量的打印输出</h1><h3 id="字符串常量："><a href="#字符串常量：" class="headerlink" title="字符串常量："></a>字符串常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;ABC&quot;</span>); <span class="comment">// ABC</span></span><br><span class="line">System.out.println(<span class="string">&quot;&quot;</span>); <span class="comment">// 字符串两个双引号中间的内容为空</span></span><br><span class="line">System.out.println(<span class="string">&quot;123&quot;</span>); <span class="comment">// 123</span></span><br></pre></td></tr></table></figure><h3 id="整数常量："><a href="#整数常量：" class="headerlink" title="整数常量："></a>整数常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="number">30</span>); <span class="comment">// 30</span></span><br><span class="line">System.out.println(-<span class="number">100</span>); <span class="comment">// -100</span></span><br></pre></td></tr></table></figure><h3 id="浮点数常量（小数）："><a href="#浮点数常量（小数）：" class="headerlink" title="浮点数常量（小数）："></a>浮点数常量（小数）：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="number">3.14</span>); <span class="comment">// 3.14</span></span><br><span class="line">System.out.println(-<span class="number">2.5</span>); <span class="comment">// -2.5</span></span><br></pre></td></tr></table></figure><h3 id="字符常量："><a href="#字符常量：" class="headerlink" title="字符常量："></a>字符常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&#x27;A&#x27;</span>); <span class="comment">// A</span></span><br><span class="line">System.out.println(<span class="string">&#x27;6&#x27;</span>); <span class="comment">// 6</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，没有不行</span></span><br><span class="line"><span class="comment">// System.out.println(&#x27;AB&#x27;); // 错误写法！！！两个单引号中间必须有且只有一个字符，有多个不行</span></span><br></pre></td></tr></table></figure><h3 id="布尔常量："><a href="#布尔常量：" class="headerlink" title="布尔常量："></a>布尔常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="keyword">true</span>); <span class="comment">// true</span></span><br><span class="line">System.out.println(<span class="keyword">false</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure><h3 id="空常量："><a href="#空常量：" class="headerlink" title="空常量："></a>空常量：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// System.out.println(null); // 错误写法！！！空常量不能直接用来打印输出</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;常量的打印输出&quot;&gt;&lt;a href=&quot;#常量的打印输出&quot; class=&quot;headerlink&quot; title=&quot;常量的打印输出&quot;&gt;&lt;/a&gt;常量的打印输出&lt;/h1&gt;&lt;h3 id=&quot;字符串常量：&quot;&gt;&lt;a href=&quot;#字符串常量：&quot; class=&quot;headerlink&quot; </summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>4. 常量的概念与分类</title>
+    <link href="http://yoursite.com/2020/08/25/4.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%88%86%E7%B1%BB/"/>
+    <id>http://yoursite.com/2020/08/25/4.%20%E5%B8%B8%E9%87%8F%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%88%86%E7%B1%BB/</id>
+    <published>2020-08-25T04:11:35.182Z</published>
+    <updated>2020-08-20T12:58:50.925Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="常量的概念与分类"><a href="#常量的概念与分类" class="headerlink" title="常量的概念与分类"></a>常量的概念与分类</h1><h2 id="常量："><a href="#常量：" class="headerlink" title="常量："></a>常量：</h2><h3 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h3><p>在程序运行期间，固定不变的量</p><h3 id="2-分类："><a href="#2-分类：" class="headerlink" title="2. 分类："></a>2. 分类：</h3><ul><li>字符串常量：凡是用双引号引起来的部分，叫做字符串常量。例如：”abc”、 “Hello”、 “123”</li><li>整数常量：直接写上的数字，没有小数点。例如：100、 200、 0、 -150</li><li>浮点数常量：直接写上的数字，有小数点，相当于小数。例如：2.5、 -3.14、 0.0</li><li>字符常量：凡是用单引号引起来的单个字符，就叫做字符常量。例如：’A’、 ‘b’、 ‘9’、 ‘中’</li><li>布尔常量：只有两种取值。true、 false    即  对/错 真/假</li><li>空常量：null。代表没有任何数据</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;常量的概念与分类&quot;&gt;&lt;a href=&quot;#常量的概念与分类&quot; class=&quot;headerlink&quot; title=&quot;常量的概念与分类&quot;&gt;&lt;/a&gt;常量的概念与分类&lt;/h1&gt;&lt;h2 id=&quot;常量：&quot;&gt;&lt;a href=&quot;#常量：&quot; class=&quot;headerlink&quot; ti</summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3. 标识符的概念与规则</title>
+    <link href="http://yoursite.com/2020/08/25/3.%20%E6%A0%87%E8%AF%86%E7%AC%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%A7%84%E5%88%99/"/>
+    <id>http://yoursite.com/2020/08/25/3.%20%E6%A0%87%E8%AF%86%E7%AC%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%A7%84%E5%88%99/</id>
+    <published>2020-08-25T04:11:35.179Z</published>
+    <updated>2020-08-22T14:01:45.096Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="标识符的概念与规则"><a href="#标识符的概念与规则" class="headerlink" title="标识符的概念与规则"></a>标识符的概念与规则</h1><h2 id="标识符："><a href="#标识符：" class="headerlink" title="标识符："></a>标识符：</h2><h3 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h3><p>是指在程序中，我们自己定义的内容。比如类的名字、方法的名字和变量的名字等等，都是标识符</p><ul><li>HelloWorld案例中，出现的标识符有类名称<code>HelloWorld</code></li></ul><h3 id="2-命名规则：硬性要求"><a href="#2-命名规则：硬性要求" class="headerlink" title="2. 命名规则：硬性要求"></a>2. 命名规则：<code>硬性要求</code></h3><ul><li>标识符可以包含<code>英文字母26个(区分大小写)</code>、<code>0-9数字</code>、<code>_ (下划线)</code>和<code>$ (美元符号)</code></li><li>标识符不能以数字开头</li><li>标识符不能是关键字</li></ul><h3 id="3-命名规范：软性要求"><a href="#3-命名规范：软性要求" class="headerlink" title="3. 命名规范：软性要求"></a>3. 命名规范：<code>软性要求</code></h3><ul><li><p>类名规范：每个单词的首字母大写（大驼峰式），例如<code>HelloWorld</code></p></li><li><p>变量名规范：第一个单词的首字母小写，后面每个单词的首字母大写（小驼峰式），例如<code>helloWoreld</code></p></li><li><p>方法名规范：同变量名（与变量名规范相同）</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;标识符的概念与规则&quot;&gt;&lt;a href=&quot;#标识符的概念与规则&quot; class=&quot;headerlink&quot; title=&quot;标识符的概念与规则&quot;&gt;&lt;/a&gt;标识符的概念与规则&lt;/h1&gt;&lt;h2 id=&quot;标识符：&quot;&gt;&lt;a href=&quot;#标识符：&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2. 关键字的概念与特征</title>
+    <link href="http://yoursite.com/2020/08/25/2.%20%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%89%B9%E5%BE%81/"/>
+    <id>http://yoursite.com/2020/08/25/2.%20%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%89%B9%E5%BE%81/</id>
+    <published>2020-08-25T04:11:35.177Z</published>
+    <updated>2020-08-17T13:01:18.837Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关键字的概念与特征"><a href="#关键字的概念与特征" class="headerlink" title="关键字的概念与特征"></a>关键字的概念与特征</h1><h2 id="关键字："><a href="#关键字：" class="headerlink" title="关键字："></a>关键字：</h2><h3 id="1-概念："><a href="#1-概念：" class="headerlink" title="1. 概念："></a>1. 概念：</h3><p>有特殊含义的、被保留的、不能随意使用的字符，叫做<strong>关键字</strong></p><h3 id="2-特征（特点）："><a href="#2-特征（特点）：" class="headerlink" title="2. 特征（特点）："></a>2. 特征（特点）：</h3><ul><li><p>字母完全小写</p></li><li><p>在增强版的记事本当中（例如Notepad++）有特殊颜色</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;关键字的概念与特征&quot;&gt;&lt;a href=&quot;#关键字的概念与特征&quot; class=&quot;headerlink&quot; title=&quot;关键字的概念与特征&quot;&gt;&lt;/a&gt;关键字的概念与特征&lt;/h1&gt;&lt;h2 id=&quot;关键字：&quot;&gt;&lt;a href=&quot;#关键字：&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1. 程序注释与HelloWorld</title>
+    <link href="http://yoursite.com/2020/08/25/1.%20%E7%A8%8B%E5%BA%8F%E6%B3%A8%E9%87%8A%E4%B8%8EHelloWorld/"/>
+    <id>http://yoursite.com/2020/08/25/1.%20%E7%A8%8B%E5%BA%8F%E6%B3%A8%E9%87%8A%E4%B8%8EHelloWorld/</id>
+    <published>2020-08-25T04:11:35.174Z</published>
+    <updated>2020-08-22T14:01:48.932Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="程序注释与HelloWorld"><a href="#程序注释与HelloWorld" class="headerlink" title="程序注释与HelloWorld"></a>程序注释与HelloWorld</h1><h2 id="一-程序注释"><a href="#一-程序注释" class="headerlink" title="一. 程序注释"></a>一. 程序注释</h2><ol><li>单行注释</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 注释内容</span></span><br></pre></td></tr></table></figure><ol start="2"><li>多行注释</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">注</span></span><br><span class="line"><span class="comment">释</span></span><br><span class="line"><span class="comment">内</span></span><br><span class="line"><span class="comment">容</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><h2 id="二-HelloWorld各行代码含义"><a href="#二-HelloWorld各行代码含义" class="headerlink" title="二. HelloWorld各行代码含义"></a>二. HelloWorld各行代码含义</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第一行的第三个单词（类名称）必须和所在的文件名称完全一样，大小写也要一样</span></span><br><span class="line"><span class="comment">// public class后面代表定义一个类的名称，类是java当中所有源代码的基本组织单位</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 第二行的内容是万年不变的固定写法，代码mian方法</span></span><br><span class="line">    <span class="comment">// 这一行代码代表程序执行的起点</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 第三行代表打印输出语句（其实就是在屏幕上显示所要打印输出的内容），是固定写法</span></span><br><span class="line">        <span class="comment">// 希望显示什么东西，就在小括号当中填写什么内容</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Hello,world!&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;程序注释与HelloWorld&quot;&gt;&lt;a href=&quot;#程序注释与HelloWorld&quot; class=&quot;headerlink&quot; title=&quot;程序注释与HelloWorld&quot;&gt;&lt;/a&gt;程序注释与HelloWorld&lt;/h1&gt;&lt;h2 id=&quot;一-程序注释&quot;&gt;&lt;a hr</summary>
+      
+    
+    
+    
+    <category term="Java基础知识" scheme="http://yoursite.com/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Java基础语法" scheme="http://yoursite.com/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
