@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     
     <title>
-        1. 程序注释与HelloWorld | My blog
+        1. helloworld.c的编写、编译和运行及代码解析 | My blog
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
@@ -128,13 +128,13 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <h3><a class="title-hover-animation">1. 程序注释与HelloWorld</a></h3>
+            <h3><a class="title-hover-animation">1. helloworld.c的编写、编译和运行及代码解析</a></h3>
         </div>
 
         <div class="meta-info">
             <div class="article-meta-info">
     <span class="article-date article-meta-item">
-        <i class="fa fa-calendar-o"></i> 2020-08-25 12:11:35
+        <i class="fa fa-calendar-o"></i> 2020-12-26 17:18:50
     </span>
     
         <span class="article-categories article-meta-item">
@@ -142,7 +142,7 @@
             <ul>
                 
                     <li>
-                        <a href="/categories/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">Java基础知识</a>
+                        <a href="/categories/C%E8%AF%AD%E8%A8%80/">C语言</a>
                     </li>
                 
             </ul>
@@ -154,7 +154,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">Java基础语法</a>
+                        <a href="/tags/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">C语言基础语法</a>
                     </li>
                 
             </ul>
@@ -165,19 +165,23 @@
         </div>
 
         <div class="article-content markdown-body">
-            <h1 id="程序注释与HelloWorld"><a href="#程序注释与HelloWorld" class="headerlink" title="程序注释与HelloWorld"></a>程序注释与HelloWorld</h1><h2 id="一-程序注释"><a href="#一-程序注释" class="headerlink" title="一. 程序注释"></a>一. 程序注释</h2><ol>
-<li>单行注释</li>
+            <h1 id="1-helloworld-c的编写、编译和运行及代码解析"><a href="#1-helloworld-c的编写、编译和运行及代码解析" class="headerlink" title="1. helloworld.c的编写、编译和运行及代码解析"></a>1. helloworld.c的编写、编译和运行及代码解析</h1><h3 id="（1）引言："><a href="#（1）引言：" class="headerlink" title="（1）引言："></a>（1）引言：</h3><p>​        下面我们来编写、编译和运行我们的第一个C语言程序</p>
+<h3 id="（2）实践："><a href="#（2）实践：" class="headerlink" title="（2）实践："></a>（2）实践：</h3><ol>
+<li><p>打开VS(Microsoft Visual Studio)或其他C语言编辑器</p>
+</li>
+<li><p>创建一个C语言文件并命名为”helloworld”(必须保证该文件的后缀为c，即C语言文件)</p>
+</li>
+<li><p>编辑该文件：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!\n&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    getchar();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编译和运行该文件</p>
+</li>
+<li><p>屏幕上输出了一行我们刚刚编写的字符串”Hello world!”</p>
+</li>
+<li><p>至此，我们便完成了helloworld.c的编写、编译和运行</p>
+</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 注释内容</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>多行注释</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">注</span></span><br><span class="line"><span class="comment">释</span></span><br><span class="line"><span class="comment">内</span></span><br><span class="line"><span class="comment">容</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="二-HelloWorld各行代码含义"><a href="#二-HelloWorld各行代码含义" class="headerlink" title="二. HelloWorld各行代码含义"></a>二. HelloWorld各行代码含义</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第一行的第三个单词（类名称）必须和所在的文件名称完全一样，大小写也要一样</span></span><br><span class="line"><span class="comment">// public class后面代表定义一个类的名称，类是java当中所有源代码的基本组织单位</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 第二行的内容是万年不变的固定写法，代码mian方法</span></span><br><span class="line">    <span class="comment">// 这一行代码代表程序执行的起点</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 第三行代表打印输出语句（其实就是在屏幕上显示所要打印输出的内容），是固定写法</span></span><br><span class="line">        <span class="comment">// 希望显示什么东西，就在小括号当中填写什么内容</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Hello,world!&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="（3）代码解析"><a href="#（3）代码解析" class="headerlink" title="（3）代码解析"></a>（3）代码解析</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="comment">// #: 关键字标识符，表示引入头文件；</span></span><br><span class="line"><span class="comment">// include: 引入头文件关键字;</span></span><br><span class="line"><span class="comment">// stdio.h: 系统标准输入、输出库对应的头文件，给printf函数服务;</span></span><br><span class="line"><span class="comment">// &lt;&gt;: 使用系统库函数；</span></span><br><span class="line"><span class="comment">// &quot;&quot;: 使用用户自定义库函数.</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"><span class="comment">// int: 函数返回值是int类型(整型)数据;</span></span></span><br><span class="line"><span class="function"><span class="comment">// main: 函数名，程序执行唯一的入口，必须有，且只能有一次;</span></span></span><br><span class="line"><span class="function"><span class="comment">// void: &quot;空&quot;,表示函数调用无需传参.    </span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">// 函数体的起始位置.</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!\n&quot;</span>);</span><br><span class="line"><span class="comment">// 将&quot;Hello world!&quot;打印到屏幕上;</span></span><br><span class="line"><span class="comment">// \n: 回车(换行).</span></span><br><span class="line">    </span><br><span class="line">    getchar(); <span class="comment">// 调用getchar()函数，实现暂停功能.    </span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"><span class="comment">// 返回当前函数类型 ——退出程序。0要和main函数的返回值类型一一对应.</span></span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 函数体的结束位置</span></span><br></pre></td></tr></table></figure>
 
 
         </div>
@@ -187,9 +191,9 @@
                 <div class="article-prev">
                     <a class="prev btn"
                        rel="prev"
-                       href="/2020/08/25/2.%20%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%89%B9%E5%BE%81/"
+                       href="/2020/12/26/2.%20%E8%AE%B0%E4%BA%8B%E6%9C%AChelloworld%E7%9A%84%E7%A8%8B%E5%BA%8F%E7%BC%96%E5%86%99%E3%80%81%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C/"
                     >
-                        <i class="fa fa-chevron-left"></i> <span class="post-nav-title-item">2. 关键字的概念与特征</span><span class="post-nav-item">Prev posts</span>
+                        <i class="fa fa-chevron-left"></i> <span class="post-nav-title-item">2. 记事本helloworld的程序编写、编译和运行</span><span class="post-nav-item">Prev posts</span>
                     </a>
                 </div>
             
@@ -215,7 +219,7 @@
     <div class="sidebar sidebar-post fade-in-down-animation">
         <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BA%8F%E6%B3%A8%E9%87%8A%E4%B8%8EHelloWorld"><span class="nav-number">1.</span> <span class="nav-text">程序注释与HelloWorld</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E7%A8%8B%E5%BA%8F%E6%B3%A8%E9%87%8A"><span class="nav-number">1.1.</span> <span class="nav-text">一. 程序注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-HelloWorld%E5%90%84%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%90%AB%E4%B9%89"><span class="nav-number">1.2.</span> <span class="nav-text">二. HelloWorld各行代码含义</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-helloworld-c%E7%9A%84%E7%BC%96%E5%86%99%E3%80%81%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C%E5%8F%8A%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90"><span class="nav-number">1.</span> <span class="nav-text">1. helloworld.c的编写、编译和运行及代码解析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%881%EF%BC%89%E5%BC%95%E8%A8%80%EF%BC%9A"><span class="nav-number">1.0.1.</span> <span class="nav-text">（1）引言：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%882%EF%BC%89%E5%AE%9E%E8%B7%B5%EF%BC%9A"><span class="nav-number">1.0.2.</span> <span class="nav-text">（2）实践：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%883%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%A3%E6%9E%90"><span class="nav-number">1.0.3.</span> <span class="nav-text">（3）代码解析</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
     </div>
@@ -287,18 +291,6 @@
             </div>
         
     </div>
-
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-    </script>
-
-     <span id="busuanzi_container_site_pv">
-    本站总访问量：<span id="busuanzi_value_site_pv"></span>次
-</span><br>
-	
-      <span id="busuanzi_container_site_uv">
-  本站访客数：<span id="busuanzi_value_site_uv"></span>人次
-</span>
-
 </footer>
 
 
