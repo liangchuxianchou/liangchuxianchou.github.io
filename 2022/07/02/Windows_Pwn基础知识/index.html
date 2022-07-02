@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="两处闲愁">
+    
+    <title>
+        
+        两处闲愁&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo03.jpg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/logo01.jpg","favicon":"/images/logo03.jpg","article_img_align":"center","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                两处闲愁&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation"></span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/logo01.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">两处闲愁</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-07-02 11:40:43</span>
+        <span class="mobile">2022-07-02 11:40</span>
+    </span>
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>2k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>7 Mins</span>
+        </span>
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="Windows-Pwn基础知识"><a href="#Windows-Pwn基础知识" class="headerlink" title="Windows Pwn基础知识"></a>Windows Pwn基础知识</h1><h3 id="函数调用约定"><a href="#函数调用约定" class="headerlink" title="函数调用约定"></a>函数调用约定</h3><p>由于函数调用约定大多只和架构相关，因此和Linux相比没有太大的变化</p>
+<h3 id="Windows程序保护"><a href="#Windows程序保护" class="headerlink" title="Windows程序保护"></a>Windows程序保护</h3><p>Windows下有部分程序保护更换了名字或者有一些细节发生了改变，我们来详细列举。</p>
+<ol>
+<li><strong>ASLR</strong>：与Linux相同，ASLR保护指的是地址随机化技术**(Address Space Layout Randomization)**，这项技术将在程序启动时将DLL随机的加载到内存中的位置，这将缓解恶意程序的加载。ASLR技术自Windows 10开始已经在系统中被配置为默认启用。</li>
+</ol>
+<p><img src="https://cdn.staticaly.com/gh/liangchuxianchou/image-hosting@master/Windows_Pwn%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/image.4ydu6wu8nuo0.webp"></p>
+<ol>
+<li><p><strong>High Entropy VA</strong>：这个保护被称为高熵64位地址空间布局随机化，一旦开启，表示此程序的地址随机化的取值空间为64 bit，这会导致攻击者更难去推测随机化后的地址。</p>
+</li>
+<li><p><strong>Force Integrity</strong>：这个保护被称为强制签名保护，一旦开启，表示此程序加载时需要验证其中的签名，如果签名不正确，程序将会被阻止运行。</p>
+</li>
+<li><p><strong>Isolation</strong>：这个保护被称为隔离保护，一旦开启，表示此程序加载时将会在一个相对独立的隔离环境中被加载，从而阻止攻击者过度提升权限。</p>
+</li>
+<li><p><strong>NX&#x2F;DEP&#x2F;PAE</strong>：与Linux相同，NX保护指的是内存页不可运行**(No-eXecute)<strong>，这项技术是一项系统级的内存保护功能，使操作系统能够将一页或多页内存标记为不可执行，从而防止从该内存区域运行代码，以帮助防止利用缓冲区溢出。它帮助防止代码在数据页面(例如堆，栈和内存池)中运行，在Windows中常称为</strong>DEP**(数据执行保护，即<strong>Data Execution Prevention</strong>)，同时引入了一个新的机制被称为PAE(物理地址扩展，即<strong>Physical Address Extension</strong>)，<strong>PAE</strong>是一项处理器功能，使x86处理器可以在部分Windows版本上访问4 GB以上的物理内存。在基于x86的系统上运行的某些32位版本的Windows Server可以使用PAE访问最多64 GB或128 GB的物理内存，具体取决于处理器的物理地址大小。使用<strong>PAE</strong>，操作系统将从两级线性地址转换转换为三级地址转换。两级线性地址转换将线性地址拆分为三个独立的字段索引到内存表中，三级地址转换将其拆分为四个独立的字段：一个2位的字段，两个9位的字段和一个12位的字段。PAE模式下的页表条目(PTE)和页目录条目(PDE)的大小从32位增加到64位。附加位允许操作系统PTE或PDE引用4 GB以上的物理内存。同时，PAE将允许在基于x64的系统上运行的32位Windows中启用DEP等功能。</p>
+</li>
+<li><p><strong>SEHOP</strong>：即结构化异常处理保护(Structured Exception Handling Overwrite Protection)，这个保护能够防止攻击者利用结构化异常处理来进行进一步的利用。</p>
+</li>
+<li><p><strong>CFG</strong>：即控制流防护(Control Flow Guard)，这项技术通过在间接跳转前插入校验代码，检查目标地址的有效性，进而可以阻止执行流跳转到预期之外的地点， 最终及时并有效的进行异常处理，避免引发相关的安全问题。<br>简单的说，就是在程序间接跳转之前，会判断这个将要跳转的地址是否是合法的。</p>
+</li>
+<li><p><strong>RFG</strong>：即返回地址防护(Return Flow Guard)，这项技术会在每个函数头部将返回地址保存到fs:[rsp](Thread Control Stack)，并在函数返回前将其与栈上返回地址进行比较，从而有效阻止了这些攻击方式。</p>
+</li>
+<li><p><strong>SafeSEH</strong>：即安全结构化异常处理(Safe Structured Exception Handlers)，这项技术可以理解为一个白名单版的安全沙箱，它会事先为你定义一些异常处理程序，并基于此构造安全结构化异常处理表，程序正式运行后，安全结构化异常处理表之外的异常处理程序将会被阻止运行。</p>
+</li>
+<li><p><strong>GS</strong>：这个保护类似于Linux中的Canary保护，一旦开启，会在返回地址和EBP之前压入一个额外的<strong>Security Cookie</strong>。系统会比较栈中的这个值和原先存放在.data中的值做一个比较。如果两者不吻合，说法栈中发生了溢出。</p>
+</li>
+<li><p><strong>Authenticode</strong>：签名保护。</p>
+</li>
+<li><p><strong>.NET</strong>：DLL混淆级保护。</p>
+</li>
+</ol>
+<h3 id="新机制——结构化异常处理-SEH机制"><a href="#新机制——结构化异常处理-SEH机制" class="headerlink" title="新机制——结构化异常处理(SEH机制)"></a>新机制——结构化异常处理(SEH机制)</h3><p>结构化异常处理是Windows操作系统上Microsoft对C&#x2F;C++程序语言做的语法扩展，用于处理异常事件的程序控制结构。异常事件是指打断程序正常执行流程的不在期望之中的硬件、软件事件。硬件异常是CPU抛出的如“除0”、数值溢出等；软件异常是操作系统与程序通过RaiseException语句抛出的异常。Microsoft扩展了C语言的语法，用<strong>try-except</strong>与<strong>try-finally</strong>语句来处理异常。异常处理程序可以释放已经获取的资源、显示出错信息与程序内部状态供调试、从错误中恢复、尝试重新执行出错的代码或者关闭程序等等。一个<code>__try</code> 语句不能既有 <code>__except</code>，又有<code>__finally</code>。但<strong>try-except</strong>与<strong>try-finally</strong>语句可以嵌套使用。</p>
+<h4 id="SEH相关的重要结构体"><a href="#SEH相关的重要结构体" class="headerlink" title="SEH相关的重要结构体"></a>SEH相关的重要结构体</h4><h5 id="TIB结构体"><a href="#TIB结构体" class="headerlink" title="TIB结构体"></a>TIB结构体</h5><p>**TIB(Thread Information Block，线程信息块)<strong>是保存线程基本信息的数据结构，它存在于x86的机器上，它也被称为是Win32的</strong>TEB(Thread Environment Block，线程环境块)**。TIB&#x2F;TEB是操作系统为了保存每个线程的私有数据创建的，每个线程都有自己的TIB&#x2F;TEB。</p>
+<p>TEB结构位于Windows.h，内容如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">TEB</span> &#123;</span></span><br><span class="line">    PVOID Reserved1[<span class="number">12</span>];</span><br><span class="line">    PPEB  ProcessEnvironmentBlock;</span><br><span class="line">    PVOID Reserved2[<span class="number">399</span>];</span><br><span class="line">    BYTE  Reserved3[<span class="number">1952</span>];</span><br><span class="line">    PVOID TlsSlots[<span class="number">64</span>];</span><br><span class="line">    BYTE  Reserved4[<span class="number">8</span>];</span><br><span class="line">    PVOID Reserved5[<span class="number">26</span>];</span><br><span class="line">    PVOID ReservedForOle;</span><br><span class="line">    PVOID Reserved6[<span class="number">4</span>];</span><br><span class="line">    PVOID TlsExpansionSlots;</span><br><span class="line">&#125; TEB, *PTEB;</span><br></pre></td></tr></table></figure>
+
+<p>TIB没有在Windows文档中说明，这里从Wine中可以看到结构如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Code in https://source.winehq.org/source/include/winnt.h#2635</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">NT_TIB</span>&#123;</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">EXCEPTION_REGISTRATION_RECORD</span> *<span class="title">Exceptionlist</span>;</span> <span class="comment">// 指向当前线程的 SEH</span></span><br><span class="line">    PVOID StackBase;    <span class="comment">// 当前线程所使用的栈的栈底</span></span><br><span class="line">    PVOID StackLimit;   <span class="comment">// 当前线程所使用的栈的栈顶</span></span><br><span class="line">    PVOID SubSystemTib; <span class="comment">// 子系统</span></span><br><span class="line">    <span class="class"><span class="keyword">union</span> &#123;</span></span><br><span class="line">        PVOID FiberData;</span><br><span class="line">        ULONG Version;</span><br><span class="line">    &#125;;</span><br><span class="line">    PVOID ArbitraryUserPointer;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">NT_TIB</span> *<span class="title">Self</span>;</span> <span class="comment">//指向TIB结构自身</span></span><br><span class="line">&#125; NT_TIB;</span><br></pre></td></tr></table></figure>
+
+<p>在这个结构中与异常处理有关的成员是指向**_EXCEPTION_REGISTRATION_RECORD<strong>结构的</strong>Exceptionlist**指针</p>
+<h5 id="EXCEPTION-REGISTRATION-RECORD结构体"><a href="#EXCEPTION-REGISTRATION-RECORD结构体" class="headerlink" title="_EXCEPTION_REGISTRATION_RECORD结构体"></a>_EXCEPTION_REGISTRATION_RECORD结构体</h5><p>该结构体主要用于描述线程异常处理句柄的地址，多个该结构的链表描述了多个线程异常处理过程的嵌套层次关系。</p>
+<p>结构内容为：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//  Code in https://source.winehq.org/source/include/winnt.h#2623</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">EXCEPTION_REGISTRATION_RECORD</span>&#123;</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">EXCEPTION_REGISTRATION_RECORD</span> *<span class="title">Next</span>;</span> <span class="comment">// 指向下一个结构的指针</span></span><br><span class="line">    PEXCEPTION_ROUTINE Handler; <span class="comment">// 当前异常处理回调函数的地址</span></span><br><span class="line">&#125;EXCEPTION_REGISTRATION_RECORD;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/liangchuxianchou/image-hosting@master/Windows_Pwn%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/image-(1).73myczjhrtg0.webp"></p>
+<h3 id="新机制——导入表和导出表"><a href="#新机制——导入表和导出表" class="headerlink" title="新机制——导入表和导出表"></a>新机制——导入表和导出表</h3><p>Windows程序没有延迟绑定机制自然也就没有<strong>PLT&#x2F;GOT</strong>表，但是Windows程序显然也是要调用所谓的库函数的，Windows下的函数库是DLL文件，类似于Unix下的libc文件，程序调用库函数需要借助的就是导入表和导出表了。</p>
+<p>导入表是PE数据组织中的一个很重要的组成部分，它是为实现代码重用而设置的。通过分析导入表数据，可以获得诸如PE文件的指令中调用了多少外来函数，以及这些外来函数都存在于哪些动态链接库里等信息。Windows加载器在运行PE时会将导入表中声明的动态链接库一并加载到进程的地址空间，并修正指令代码中调用的函数地址。在数据目录中一共有四种类型的数据与导入表数据有关： 导入表、导入函数地址表、绑定导入表、延迟加载导入表。</p>
+<p>程序中，导入表的地址通常位于**.idata**段</p>
+<p><img src="https://cdn.staticaly.com/gh/liangchuxianchou/image-hosting@master/Windows_Pwn%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/image-(2).172q4saicgyk.webp"></p>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">两处闲愁</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows-Pwn%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-text">Windows Pwn基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E7%BA%A6%E5%AE%9A"><span class="nav-text">函数调用约定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows%E7%A8%8B%E5%BA%8F%E4%BF%9D%E6%8A%A4"><span class="nav-text">Windows程序保护</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86-SEH%E6%9C%BA%E5%88%B6"><span class="nav-text">新机制——结构化异常处理(SEH机制)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#SEH%E7%9B%B8%E5%85%B3%E7%9A%84%E9%87%8D%E8%A6%81%E7%BB%93%E6%9E%84%E4%BD%93"><span class="nav-text">SEH相关的重要结构体</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#TIB%E7%BB%93%E6%9E%84%E4%BD%93"><span class="nav-text">TIB结构体</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#EXCEPTION-REGISTRATION-RECORD%E7%BB%93%E6%9E%84%E4%BD%93"><span class="nav-text">_EXCEPTION_REGISTRATION_RECORD结构体</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94%E5%AF%BC%E5%85%A5%E8%A1%A8%E5%92%8C%E5%AF%BC%E5%87%BA%E8%A1%A8"><span class="nav-text">新机制——导入表和导出表</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+
+</body>
+</html>
